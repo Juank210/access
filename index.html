@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movilidad Eléctrica Colombia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="bg-texture"></div>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">GE</div>
+      <div>
+        <p class="brand-kicker">Plataforma piloto</p>
+        <h1>Movilidad eléctrica en el transporte</h1>
+      </div>
+    </div>
+    <nav class="nav-tabs" aria-label="Secciones principales">
+      <button class="tab-link active" data-tab="home">Inicio</button>
+      <button class="tab-link" data-tab="buses">Electrificación buses</button>
+      <button class="tab-link" data-tab="bicis">Bicicletas eléctricas</button>
+      <button class="tab-link" data-tab="carga">Vehículos de carga</button>
+      <button class="tab-link" data-tab="eco">Eco-conducción</button>
+      <button class="tab-link" data-tab="indicadores">Indicadores piloto</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="tab-panel active" data-tab="home" aria-label="Inicio">
+      <div class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Ruta hacia la descarbonización</p>
+          <h2>ACCESS </h2>
+		  <h3>Acelerando el acceso a soluciones de movilidad urbana con bajas emisiones de carbono mediante la digitalización </h3>
+          <p class="lede">El Programa de las Naciones Unidas para el Medio Ambiente (PNUMA o UNEP) en Colombia apoya al país en la gestión ambiental, cambio climático y desarrollo sostenible, incluyendo el proyecto ACCESS para mejorar la movilidad urbana con herramientas digitales en Bogotá y Medellín.</p>
+          <div class="hero-actions">
+            <button class="cta primary active" data-tab="bogota">ACCESS Bogotá</button>
+            <button class="cta primary active" data-tab="buses">ACCESS Medellín</button>
+          </div>
+          <div class="hero-badges">
+            <span class="badge">Operacional</span>
+            <span class="badge">Ambiental</span>
+            <span class="badge">Financiero</span>
+            <span class="badge">Usuarios</span>
+            <span class="badge">Género</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 320 320" role="presentation">
+            <defs>
+              <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0dbf8c" />
+                <stop offset="100%" stop-color="#0a77ff" />
+              </linearGradient>
+            </defs>
+            <circle cx="160" cy="160" r="140" fill="url(#grad)" opacity="0.12" />
+            <path d="M40 200 C120 120 200 240 280 160" fill="none" stroke="#0dbf8c" stroke-width="6" stroke-linecap="round" />
+            <path d="M60 110 C140 190 190 90 270 180" fill="none" stroke="#0a77ff" stroke-width="6" stroke-linecap="round" />
+            <circle cx="100" cy="120" r="10" fill="#0a77ff" />
+            <circle cx="220" cy="210" r="10" fill="#0dbf8c" />
+            <circle cx="260" cy="150" r="8" fill="#f7c948" />
+          </svg>
+        </div>
+      </div>
+      <div class="modules-grid">
+        <article class="module-card">
+          <h3>Electrificación de buses</h3>
+          <p>Compara buses de combustión vs eléctricos, rutas y análisis operacional/financiero.</p>
+        </article>
+        <article class="module-card">
+          <h3>Bicicletas eléctricas</h3>
+          <p>Rutas y consumo energético vs moto, indicadores ambientales y operacionales.</p>
+        </article>
+        <article class="module-card">
+          <h3>Vehículos de carga</h3>
+          <p>Escenarios de renovación y eficiencia para flota de carga y sus incentivos.</p>
+        </article>
+        <article class="module-card">
+          <h3>Eco-conducción</h3>
+          <p>Monitoreo pre/post entrenamiento con alertas de aceleración y frenado brusco.</p>
+        </article>
+        <article class="module-card">
+          <h3>Indicadores del piloto</h3>
+          <p>Visualiza KPIs energéticos, ambientales, usuarios y género en un tablero.</p>
+        </article>
+      </div>
+    </section>
+	
+	<section class="tab-panel" data-tab="bogota" aria-label="ACCESS Bogotá">
+	<div class="section-header">
+        <div>
+          <p class="eyebrow">Buses</p>
+          <h2>Electrificación de flota</h2>
+          <p class="lede">Lista tu flota actual, agrega vehículos eléctricos y compara impacto operacional, ambiental y financiero.</p>
+        </div>
+      </div>
+	</section>
+	
+	
+	
+    <section class="tab-panel" data-tab="buses" aria-label="Electrificación de buses">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Buses</p>
+          <h2>Electrificación de flota</h2>
+          <p class="lede">Lista tu flota actual, agrega vehículos eléctricos y compara impacto operacional, ambiental y financiero.</p>
+        </div>
+        <button class="cta ghost" data-tab="home">Volver al inicio</button>
+      </div>
+      <div class="compare-grid">
+        <article class="panel-card combustion">
+          <header>
+            <div>
+              <p class="label">Flota actual</p>
+              <h3>Combustión</h3>
+            </div>
+            <span class="pill">Azul</span>
+          </header>
+          <ul class="item-list">
+            <li><strong>Bus Euro V</strong><span>Consumo 32 L/100km</span></li>
+            <li><strong>Bus articulado</strong><span>Consumo 48 L/100km</span></li>
+            <li><strong>Bus padrón</strong><span>Consumo 28 L/100km</span></li>
+          </ul>
+          <button class="link-btn">+ Agregar bus</button>
+        </article>
+
+        <article class="panel-card electric">
+          <header>
+            <div>
+              <p class="label">Nueva flota</p>
+              <h3>Eléctricos</h3>
+            </div>
+            <span class="pill">Verde</span>
+          </header>
+          <ul class="item-list">
+            <li><strong>E-bus 12m</strong><span>Rendimiento 1.1 kWh/km</span></li>
+            <li><strong>E-bus articulado</strong><span>Rendimiento 1.7 kWh/km</span></li>
+            <li><strong>E-bus midi</strong><span>Rendimiento 0.9 kWh/km</span></li>
+          </ul>
+          <button class="link-btn">+ Agregar bus</button>
+        </article>
+
+        <article class="panel-card map-card">
+          <header>
+            <p class="label">Ruta</p>
+            <h3>Origen / destino</h3>
+          </header>
+          <div class="map-placeholder">
+            <svg viewBox="0 0 320 240" role="presentation">
+              <rect x="0" y="0" width="320" height="240" rx="18" fill="#0a2342" opacity="0.08" />
+              <path d="M40 200 Q90 140 140 170 T240 140" fill="none" stroke="#0a77ff" stroke-width="4" />
+              <path d="M70 180 Q130 110 200 120 T270 90" fill="none" stroke="#0dbf8c" stroke-width="4" />
+              <circle cx="60" cy="190" r="8" fill="#0a77ff" />
+              <circle cx="260" cy="90" r="8" fill="#0dbf8c" />
+            </svg>
+          </div>
+          <div class="route-meta">
+            <div>
+              <p class="label">Origen</p>
+              <strong>Bogotá</strong>
+            </div>
+            <div>
+              <p class="label">Destino</p>
+              <strong>Soacha</strong>
+            </div>
+            <button class="link-btn">Editar ruta</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="form-grid">
+        <div class="panel-card">
+          <header>
+            <p class="label">Vehículo personalizado</p>
+            <h3>Datos clave</h3>
+          </header>
+          <div class="form-row">
+            <label>Peso (kg)<input type="number" placeholder="12000"></label>
+            <label>Área frontal (m²)<input type="number" placeholder="6.2"></label>
+          </div>
+          <div class="form-row">
+            <label>Rendimiento<input type="text" placeholder="32 L/100km"></label>
+            <label>Consumo eléctrico<input type="text" placeholder="1.1 kWh/km"></label>
+          </div>
+          <div class="form-row">
+            <label>Autonomía (km)<input type="number" placeholder="280"></label>
+            <label>Capacidad pasajeros<input type="number" placeholder="80"></label>
+          </div>
+          <button class="cta small">Calcular vehículo</button>
+        </div>
+
+        <div class="panel-card stack">
+          <div class="toggle-buttons" role="tablist">
+            <button class="chip active" data-target="operacional">Análisis operacional</button>
+            <button class="chip" data-target="financiero">Análisis financiero</button>
+          </div>
+
+          <div class="analysis" data-panel="operacional">
+            <div class="stats">
+              <div>
+                <p class="label">Energía</p>
+                <strong>1.1 kWh/km</strong>
+                <span class="delta positive">-32% vs combustión</span>
+              </div>
+              <div>
+                <p class="label">Ambiental</p>
+                <strong>-85% CO₂e</strong>
+                <span class="delta positive">Mejor eléctrico</span>
+              </div>
+              <div>
+                <p class="label">Diferencia</p>
+                <strong class="text-green">Eléctrico</strong>
+                <span class="delta positive">+72% eficiencia</span>
+              </div>
+            </div>
+            <button class="link-btn">Ver reporte detallado</button>
+          </div>
+
+          <div class="analysis hidden" data-panel="financiero">
+            <div class="form-row">
+              <label>Costo vehículo<input type="text" placeholder="$ 1,2 B"></label>
+              <label>Costo infraestructura<input type="text" placeholder="$ 800 M"></label>
+            </div>
+            <div class="form-row">
+              <label>Mantención anual<input type="text" placeholder="$ 120 M"></label>
+              <label>Ingresos / financiamiento<input type="text" placeholder="$ 1,6 B"></label>
+            </div>
+            <div class="form-row">
+              <label>Años de análisis<input type="number" placeholder="10"></label>
+              <label>Tasa descuento<input type="number" placeholder="8"></label>
+            </div>
+            <div class="stats">
+              <div>
+                <p class="label">TIR</p>
+                <strong>14.2%</strong>
+                <span class="delta positive">Viable</span>
+              </div>
+              <div>
+                <p class="label">Payback</p>
+                <strong>6.2 años</strong>
+                <span class="delta">Incluye CAPEX</span>
+              </div>
+              <div>
+                <p class="label">Capex</p>
+                <strong>$ 2,0 B</strong>
+                <span class="delta">Bus + cargadores</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-panel" data-tab="bicis" aria-label="Bicicletas eléctricas">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Bicicletas eléctricas</p>
+          <h2>Micromovilidad con energía limpia</h2>
+          <p class="lede">Compara desempeño energético de bicicletas eléctricas frente a motos en rutas urbanas.</p>
+        </div>
+        <button class="cta ghost" data-tab="home">Volver al inicio</button>
+      </div>
+      <div class="dual-grid">
+        <article class="panel-card">
+          <header>
+            <p class="label">Vehículos</p>
+            <h3>Moto vs e-bike</h3>
+          </header>
+          <ul class="item-list">
+            <li><strong>Moto 125cc</strong><span>2.6 L/100km</span></li>
+            <li><strong>Moto 150cc</strong><span>3.0 L/100km</span></li>
+            <li><strong>E-bike urbana</strong><span>0.6 kWh/100km</span></li>
+            <li><strong>E-bike cargo</strong><span>0.9 kWh/100km</span></li>
+          </ul>
+          <button class="link-btn">+ Agregar vehículo</button>
+        </article>
+        <article class="panel-card map-card">
+          <header>
+            <p class="label">Ruta</p>
+            <h3>Selecciona en mapa</h3>
+          </header>
+          <div class="map-placeholder">
+            <svg viewBox="0 0 320 240" role="presentation">
+              <rect x="0" y="0" width="320" height="240" rx="18" fill="#0a2342" opacity="0.08" />
+              <path d="M50 210 Q120 120 190 150 T270 90" fill="none" stroke="#f7c948" stroke-width="4" />
+              <circle cx="60" cy="205" r="8" fill="#0a77ff" />
+              <circle cx="260" cy="95" r="8" fill="#0dbf8c" />
+            </svg>
+          </div>
+          <div class="stats compact">
+            <div>
+              <p class="label">Distancia</p>
+              <strong>12.4 km</strong>
+            </div>
+            <div>
+              <p class="label">Pendiente</p>
+              <strong>4.2%</strong>
+            </div>
+            <div>
+              <p class="label">Tiempo estimado</p>
+              <strong>36 min</strong>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="stats-grid">
+        <article class="panel-card">
+          <header><p class="label">Energía</p><h3>Consumo</h3></header>
+          <p class="big-text">-78% kWh vs moto</p>
+          <p class="delta positive">Ruta optimizada</p>
+        </article>
+        <article class="panel-card">
+          <header><p class="label">Ambiental</p><h3>CO₂e</h3></header>
+          <p class="big-text">-92% emisiones</p>
+          <p class="delta positive">Mejor e-bike</p>
+        </article>
+        <article class="panel-card">
+          <header><p class="label">Operacional</p><h3>Coste/km</h3></header>
+          <p class="big-text">$ 65 COP</p>
+          <p class="delta">Incluye energía</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="tab-panel" data-tab="carga" aria-label="Vehículos de carga">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Carga</p>
+          <h2>Optimiza renovación de flota</h2>
+          <p class="lede">Compara dos vehículos de combustión, evalúa eficiencia y escenarios de incentivos Fom Carga.</p>
+        </div>
+        <button class="cta ghost" data-tab="home">Volver al inicio</button>
+      </div>
+      <div class="compare-grid">
+        <article class="panel-card combustion">
+          <header>
+            <p class="label">Actual</p>
+            <h3>Carga A</h3>
+          </header>
+          <ul class="item-list">
+            <li><strong>Camión 8T</strong><span>36 L/100km</span></li>
+            <li><strong>Euro IV</strong><span>SOx 1.2 g/km</span></li>
+          </ul>
+          <button class="link-btn">+ Agregar</button>
+        </article>
+        <article class="panel-card combustion alt">
+          <header>
+            <p class="label">Escenario</p>
+            <h3>Carga B</h3>
+          </header>
+          <ul class="item-list">
+            <li><strong>Camión 12T</strong><span>42 L/100km</span></li>
+            <li><strong>Euro VI</strong><span>SOx 0.5 g/km</span></li>
+          </ul>
+          <button class="link-btn">+ Agregar</button>
+        </article>
+        <article class="panel-card map-card">
+          <header><p class="label">Ruta</p><h3>Origen / destino</h3></header>
+          <div class="map-placeholder">
+            <svg viewBox="0 0 320 240" role="presentation">
+              <rect x="0" y="0" width="320" height="240" rx="18" fill="#0a2342" opacity="0.08" />
+              <path d="M40 210 Q100 130 180 140 T260 110" fill="none" stroke="#0a77ff" stroke-width="4" />
+              <path d="M50 150 Q130 90 210 120 T280 80" fill="none" stroke="#f7c948" stroke-width="4" />
+              <circle cx="50" cy="210" r="8" fill="#0a77ff" />
+              <circle cx="270" cy="80" r="8" fill="#f7c948" />
+            </svg>
+          </div>
+          <div class="route-meta">
+            <div>
+              <p class="label">KM</p>
+              <strong>86 km</strong>
+            </div>
+            <div>
+              <p class="label">Carga útil</p>
+              <strong>8.5 T</strong>
+            </div>
+            <button class="link-btn">Editar ruta</button>
+          </div>
+        </article>
+      </div>
+      <div class="panel-card stack">
+        <div class="toggle-buttons" role="tablist">
+          <button class="chip active" data-target="operacional-carga">Energía y ambiental</button>
+          <button class="chip" data-target="financiero-carga">Financiero</button>
+        </div>
+        <div class="analysis" data-panel="operacional-carga">
+          <div class="stats">
+            <div>
+              <p class="label">Consumo</p>
+              <strong>42 → 36 L/100km</strong>
+              <span class="delta positive">-14%</span>
+            </div>
+            <div>
+              <p class="label">CO₂e</p>
+              <strong>-18%</strong>
+              <span class="delta positive">Escenario B</span>
+            </div>
+            <div>
+              <p class="label">SOx</p>
+              <strong>-58%</strong>
+              <span class="delta positive">Euro VI</span>
+            </div>
+          </div>
+        </div>
+        <div class="analysis hidden" data-panel="financiero-carga">
+          <div class="stats">
+            <div>
+              <p class="label">CAPEX</p>
+              <strong>$ 1,4 B</strong>
+              <span class="delta">Vehículo + incentivos</span>
+            </div>
+            <div>
+              <p class="label">Payback</p>
+              <strong>5.8 años</strong>
+              <span class="delta positive">Con Fom Carga</span>
+            </div>
+            <div>
+              <p class="label">Ahorro OPEX</p>
+              <strong>-$ 180 M/año</strong>
+              <span class="delta positive">Menor diésel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-panel" data-tab="eco" aria-label="Eco-conducción">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Eco-conducción</p>
+          <h2>Entrenamiento y seguimiento</h2>
+          <p class="lede">Carga registros pre/post formación para identificar mejoras en hábitos de conducción.</p>
+        </div>
+        <button class="cta ghost" data-tab="home">Volver al inicio</button>
+      </div>
+      <div class="dual-grid">
+        <article class="panel-card">
+          <header><p class="label">Datos</p><h3>Monitoreo</h3></header>
+          <div class="upload-zone">
+            <p>Sube archivo pre-formación</p>
+            <button class="link-btn">Cargar CSV</button>
+          </div>
+          <div class="upload-zone">
+            <p>Sube archivo post-formación</p>
+            <button class="link-btn">Cargar CSV</button>
+          </div>
+        </article>
+        <article class="panel-card">
+          <header><p class="label">Recomendaciones</p><h3>Acciones sugeridas</h3></header>
+          <ul class="checklist">
+            <li>Reducir aceleraciones bruscas en salidas</li>
+            <li>Usar frenado regenerativo en descensos</li>
+            <li>Planear paradas para minimizar ralentí</li>
+          </ul>
+        </article>
+      </div>
+      <div class="stats-grid">
+        <article class="panel-card">
+          <header><p class="label">Aceleración brusca</p><h3>Antes vs después</h3></header>
+          <p class="big-text">-34%</p>
+          <p class="delta positive">Menos eventos</p>
+        </article>
+        <article class="panel-card">
+          <header><p class="label">Frenado brusco</p><h3>Antes vs después</h3></header>
+          <p class="big-text">-28%</p>
+          <p class="delta positive">Mejora</p>
+        </article>
+        <article class="panel-card">
+          <header><p class="label">Uso energía</p><h3>Eficiencia</h3></header>
+          <p class="big-text">+11%</p>
+          <p class="delta positive">Post entrenamiento</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="tab-panel" data-tab="indicadores" aria-label="Indicadores del piloto">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">KPIs del piloto</p>
+          <h2>Visualización de indicadores</h2>
+          <p class="lede">Selecciona datasets (buses, carga, bicis) y mira indicadores energéticos, ambientales, operacionales, usuarios y género.</p>
+        </div>
+        <button class="cta ghost" data-tab="home">Volver al inicio</button>
+      </div>
+      <div class="controls-row">
+        <div class="panel-card mini">
+          <p class="label">Dataset</p>
+          <div class="pill-row">
+            <button class="chip active">Buses</button>
+            <button class="chip">Carga</button>
+            <button class="chip">Bicis</button>
+          </div>
+        </div>
+        <div class="panel-card mini">
+          <p class="label">Indicadores</p>
+          <div class="pill-row">
+            <span class="badge">Energéticos</span>
+            <span class="badge">Ambientales</span>
+            <span class="badge">Operacionales</span>
+            <span class="badge">Usuarios</span>
+            <span class="badge">Género</span>
+          </div>
+        </div>
+      </div>
+      <div class="charts-grid">
+        <article class="panel-card chart-card">
+          <header><p class="label">Energía</p><h3>Consumo por km</h3></header>
+          <div class="chart-placeholder">
+            <div class="bar" style="--v:45%"></div>
+            <div class="bar" style="--v:62%"></div>
+            <div class="bar" style="--v:28%"></div>
+          </div>
+        </article>
+        <article class="panel-card chart-card">
+          <header><p class="label">Ambiental</p><h3>CO₂e evitado</h3></header>
+          <div class="chart-placeholder">
+            <div class="bar alt" style="--v:70%"></div>
+            <div class="bar alt" style="--v:52%"></div>
+            <div class="bar alt" style="--v:80%"></div>
+          </div>
+        </article>
+        <article class="panel-card chart-card">
+          <header><p class="label">Operacional</p><h3>Disponibilidad</h3></header>
+          <div class="chart-placeholder dots">
+            <div class="dot" style="--v:78%"></div>
+            <div class="dot" style="--v:64%"></div>
+            <div class="dot" style="--v:92%"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
