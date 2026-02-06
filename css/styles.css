@@ -107,11 +107,16 @@ main { display: block; }
 }
 .hero-text h2 { font-size: clamp(28px, 4vw, 40px); margin-top: 6px; }
 .eyebrow { text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; color: var(--accent-gold); }
-.lede { margin-top: 10px; max-width: 1000px; }
-.hero-actions { display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+.lede { 
+  margin-top: 10px; 
+  max-width: 1000px; 
+  text-align: justify; 
+  margin-bottom: 20px;
+}
+.hero-actions { display: flex; gap: 12px; margin-top: 12; flex-wrap: wrap; }
 .hero-badges { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
-.hero-visual { justify-self: end; }
-.hero-visual svg { width: 100%; max-width: 320px; }
+.hero-visual { justify-self: start; }
+.hero-visual svg { width: 100%; max-width: 220px; }
 
 .cta {
   border: none;
