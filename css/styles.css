@@ -113,7 +113,13 @@ main { display: block; }
   text-align: justify; 
   margin-bottom: 20px;
 }
-.hero-actions { display: flex; gap: 12px; margin-top: 12; flex-wrap: wrap; }
+.hero-actions { display: flex; gap: 12px; margin-top: 12; flex-wrap: wrap; position: relative; z-index: 999;}
+.hero-actions a {
+    position: relative;
+    z-index: 9999 !important; /* Lo pone por encima de TODO */
+    pointer-events: all !important; /* Asegura que detecte el ratón */
+    display: inline-block;
+}
 .hero-badges { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
 .hero-visual { justify-self: start; }
 .hero-visual svg { width: 100%; max-width: 220px; }
