@@ -1,821 +1,1233 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movilidad Eléctrica Colombia</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCESS COLOMBIA</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="bg-texture"></div>
-  <header class="topbar">
-    <div class="brand">
-      <div ><img src="Fig/LOGOACCESS.png" width="50"></div>
-      <div>
-        <p class="brand-kicker">Plataforma piloto</p>
-        <h1>Movilidad eléctrica en el transporte</h1>
-      </div>
-    </div>
-    <nav class="nav-tabs" aria-label="Secciones principales">
-      <button class="tab-link active" data-tab="home">Inicio</button>
-      <button class="tab-link" data-tab="buses">Electrificación buses</button>
-      <button class="tab-link" data-tab="bicis">Bicicletas eléctricas</button>
-      <button class="tab-link" data-tab="carga">Vehículos de carga</button>
-      <button class="tab-link" data-tab="eco">Eco-conducción</button>
-      <button class="tab-link" data-tab="indicadores">Indicadores piloto</button>
-	  <button class="tab-link" data-tab="capa">Cursos y capacitaciones</button>
-    </nav>
-  </header>
-
-  <main>
-    <section class="tab-panel active" data-tab="home" aria-label="Inicio">
-      <div class="hero">
-        <div class="hero-text">
-          <p class="eyebrow">Ruta hacia la descarbonización</p>
-          <h2>ACCESS COLOMBIA </h2>
-		  <h3>Acelerando el acceso a soluciones de movilidad urbana con bajas emisiones de carbono mediante la digitalización </h3>
-          <p class="lede">ACCESS es pionero en el futuro del transporte en América Latina con un proyecto de digitalización transformacional en seis países: Argentina, Brasil, Colombia, Ecuador, México y Perú.</p> 
-		  <p class="lede"> El objetivo es reducir de forma medible las emisiones de gases de efecto invernadero (GEI) del sector del transporte, que actualmente contribuye con el 35 % en la región.</p>
-		  <p class="lede">Para 2029, una mayor digitalización del transporte urbano acelerará la implementación de estrategias de prevención, cambio y mejora que permitan una mejor implementación y la transición a modos de transporte con bajas emisiones.</p>
-          <div class="hero-actions">
-            <button class="cta primary active" data-tab="bogota">ACCESS Bogotá</button>
-            <button class="cta primary active" data-tab="medellin">ACCESS Medellín</button>
-          </div>
-
+    <!-- Header con Navegación -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="Fig/LOGOACCESS.png" width="70">
+                    <h1 class="logo-text">ACCESS</h1>
+                </div>
+                <nav class="main-nav" role="tablist">
+                    <button class="nav-tab active" data-target="landing" role="tab">Inicio</button>
+                    <button class="nav-tab" data-target="indicadores" role="tab">Indicadores</button>
+                    <button class="nav-tab" data-target="electrificacion" role="tab">Electrificación</button>
+                    <button class="nav-tab" data-target="bicicletas" role="tab">Bicicletas</button>
+                    <button class="nav-tab" data-target="carga" role="tab">Carga</button>
+                    <button class="nav-tab" data-target="ecoconductor" role="tab">Eco-Conducción</button>
+					<button class="nav-tab" data-target="cursos" role="tab">Cursos y capacitaciones</button>
+                </nav>
+            </div>
         </div>
-		<div class="hero-visual" aria-hidden="true">
-          <img src="Fig/LOGOACCESS.png" width="500">
-        </div>
-          </div>
-          <div class="hero">
+    </header>
 
-        <div class="hero-text">
-          <p class="eyebrow">Entidades relacionadas</p>
-          <div class="modules-grid">
-		  
-		  
-		  <article class="module-card">
-		  <div class="card-header">
-         <h4>Programa de las Naciones Unidas para el Medio Ambiente</h4>
-		</div>
-		 <div class="card-body">
-         <img src="Fig/LOGOUNEP.png" width="150">
+    <!-- Landing Page -->
+    <section id="landing" class="view-section active">
+        <div class="hero">
+            <div class="container">
+                <h2 class="hero-title">ACCESS COLOMBIA</h2>
+                <p class="hero-subtitle">Acelerando el acceso a soluciones de movilidad urbana con bajas emisiones de carbono mediante la digitalización</p>
+                <p class="lede">ACCESS es pionero en el futuro del transporte en América Latina con un proyecto de digitalización transformacional en seis países: Argentina, Brasil, Colombia, Ecuador, México y Perú.</p> 
+			  <p class="lede"> El objetivo es reducir de forma medible las emisiones de gases de efecto invernadero (GEI) del sector del transporte, que actualmente contribuye con el 35 % en la región.</p>
+			  <p class="lede">Para 2029, una mayor digitalización del transporte urbano acelerará la implementación de estrategias de prevención, cambio y mejora que permitan una mejor implementación y la transición a modos de transporte con bajas emisiones.</p>
+            </div>
+			
         </div>
-        </article>
-		
-		
-		<article class="module-card">
-		  <div class="card-header">
-			<h4>Universidad Tecnológica de Pereira</h4>
-		  </div>
-		  <div class="card-body">
-			<img src="Fig/LOGOUTP.png" alt="UTP Logo" width="150">
-		  </div>
-		</article>
-		
-		<article class="module-card">
-		<div class="card-header">
-          <h4>Grupo de Investigación en Gestión Energética </h4>
-		  </div>
-		  <div class="card-body">
-          <img src="Fig/LOGOGEN.png" width="150">
-		  </div>
-        </article>
-		
-        <article class="module-card">
-		<div class="card-header">
-          <h4>Ministerio de Ambiente y Desarrollo Sostenible</h4>
-		   </div>
-		  <div class="card-body">
-          <img src="Fig/LOGO1.png" width="150">
-		  </div>
-        </article>
-		
-        <article class="module-card">
-		<div class="card-header">
-          <h4>Ministerio de transporte</h4>
-		  </div>
-          <div class="card-body">
-          <img src="Fig/LOGO2.png" width="150">
-		  </div>
-        </article>
-		
-		
-		<article class="module-card">
-		<div class="card-header">
-          <h4> Ministerio de Tecnologías de las TIC </h4>
-		  </div>
-          <div class="card-body">
-          <img src="Fig/LOGO3.png" width="150">
-		  </div>
-        </article>
-		
-		<article class="module-card">
-		<div class="card-header">
-          <h4>Ministerio de Minas y Energía</h4>
-		  </div>
-          <div class="card-body">
-          <img src="Fig/LOGO5.png" width="150">
-		  </div>
-        </article>
-		
-		<article class="module-card">
-		<div class="card-header">
-          <h4>Departamento Nacional de Planeación</h4>
-		  </div>
-          <div class="card-body">
-          <img src="Fig/LOGO4.png"  width="150">
-		  </div>
-        </article>
-		
-		<article class="module-card">
-		<div class="card-header">
-          <h4>Ministerio de Minas y Energía</h4>
-		  </div>
-		  <div class="card-body">
-          <img src="Fig/LOGO5.png" width="150">
-		  </div>
-        </article>
-      </div>
-   
-  </div>
-       
-      </div>
-      </div>
+
+        <div class="container">
+            <div class="features-grid">
+                <!-- Tarjeta 1: ACCESS BOGOTA -->
+                <div class="feature-card" data-navigate="bogota">
+                    <div class="feature-icon">
+						<img src="Fig/LOGOACCESSB.png" width="160">
+                    </div>
+                    <h3 class="feature-title">ACCESS BOGOTÁ</h3>
+                    <p class="feature-description">
+                        Piloto sobre monitoreo de empresas de carga buscando optimización de servicio mediante estrategias ASI.</p>
+                    <button class="feature-button">Explorar →</button>
+                </div>
+				<!-- Tarjeta 2: ACCESS Medellín -->
+                <div class="feature-card" data-navigate="medellin">
+                    <div class="feature-icon">
+						<img src="Fig/LOGOACCESSM.png" width="180">
+                    </div>
+                    <h3 class="feature-title">ACCESS MEDELLÍN</h3>
+                    <p class="feature-description">
+                        Piloto sobre monitoreo de buses y bicicletas para evaluar la electrificación.
+                    </p>
+                    <button class="feature-button">Explorar →</button>
+                </div>
+                <!-- Tarjeta 3: Cursos capacitación -->
+                <div class="feature-card" data-navigate="cursos">
+                    <div class="feature-icon">
+						<img src="Fig/LOGOACCESSC.png" width="130">
+                    </div>
+                    <h3 class="feature-title">CURSOS Y CAPACITACIONES</h3>
+                    <p class="feature-description">
+                        Cursos y capacitaciones en digitalización, genero y transporte.
+                    </p>
+                    <button class="feature-button" data-target="cursos" role="tab">Explorar →</button>
+                </div>
+				<div class="feature-card" data-navigate="entidades">
+                    <div class="feature-icon">
+						<img src="Fig/LOGOACCESSE.png" width="140">
+                    </div>
+                    <h3 class="feature-title">ENTIDADES RELACIONADAS</h3>
+                    <p class="feature-description">
+                        Entidades participantes en el proyecto ACCESS.
+                    </p>
+                    <button class="feature-button">Explorar →</button>
+                </div>
+            </div>
+        </div>
     </section>
-<section class="tab-panel" data-tab="capa" aria-label="ACCESS Cursos">
+	
+	
+
+<section id="entidades" class="view-section">
+	 <div class="hero">
+        <div class="hero-text">
+          <h3 class="hero-title">Las entidades participantes en el proyecto son :</h3>
+		   </div>
+		   </div>
+		   
+	 <div class="hero">
+        <div class="hero-text">
+          <p class="feature-title">Financiadores :</p>
+		  <div class="slider-container">
+			<div class="card-mini card-large">
+				<div class="card-large-header">
+					<img src="Fig/bmukn-logo.jpg" width="400"  alt="Logo Grande">
+				</div>
+				<div class="card-mini-content">
+					<p class="card-mini-subtitle">Ministerio Federal de Medio Ambiente, Acción por el Clima, Protección de la Naturaleza y Seguridad Nuclear</p>
+				</div>
+			</div>
+			<div class="card-mini card-large">
+				<div class="card-large-header">
+					<img src="Fig/LOGOIKI.png" width="400"  alt="Logo Grande">
+				</div>
+				<div class="card-mini-content">
+					<p class="card-mini-subtitle">Iniciativa Climática Internacional</p>
+				</div>
+			</div>
+      </div>
+  </div>
+     </div>
+		   
+		   
+		   <div class="hero">
+        <div class="hero-text">
+          <p class="feature-title">Nivel nacional:</p>
+		  <div class="slider-container">
+		  
+    <div class="card-mini">
+        <div class="card-mini-icon"><img src="Fig/LOGOUNEP.png"></div>
+        <div class="card-mini-content">
+            <p class="card-mini-subtitle">Programa de las Naciones Unidas para el Medio Ambiente</p>
+        </div>
+    </div>
+    <div class="card-mini">
+        <div class="card-mini-icon"><img src="Fig/LOGOUTP.png"></div>
+        <div class="card-mini-content">
+            <p class="card-mini-subtitle">Universidad Tecnológica de Pereira</p>
+        </div>
+    </div>
+	<div class="card-mini">
+        <div class="card-mini-icon"><img src="Fig/LOGOGEN.png"></div>
+        <div class="card-mini-content">
+            <p class="card-mini-subtitle">Grupo de Investigación en Gestión Energética</p>
+        </div>
+    </div>
+	<div class="card-mini">
+        <div class="card-mini-icon"><img src="Fig/LOGO1.png"></div>
+        <div class="card-mini-content">
+            <p class="card-mini-subtitle">Ministerio de Ambiente y Desarrollo Sostenible</p>
+        </div>
+    </div>
+	<div class="card-mini">
+        <div class="card-mini-icon"><img src="Fig/LOGO2.png"></div>
+        <div class="card-mini-content">
+            <p class="card-mini-subtitle">Ministerio de transporte</p>
+        </div>
+    </div>
+	<div class="card-mini">
+        <div class="card-mini-icon"><img src="Fig/LOGO3.png"></div>
+        <div class="card-mini-content">
+            <p class="card-mini-subtitle">Ministerio de Tecnologías de la Información y las Comunicaciones</p>
+        </div>
+    </div>
+	<div class="card-mini">
+        <div class="card-mini-icon"><img src="Fig/LOGO5.png"></div>
+        <div class="card-mini-content">
+            <p class="card-mini-subtitle">Ministerio de Minas y Energía</p>
+        </div>
+    </div>
+	<div class="card-mini">
+        <div class="card-mini-icon"><img src="Fig/LOGO4.png"></div>
+        <div class="card-mini-content">
+            <p class="card-mini-subtitle">Departamento Nacional de Planeación</p>
+        </div>
+    </div>
+	
+	
+	
+	
+    </div>
+      </div>
+  </div>
+  <div class="hero">
+        <div class="hero-text">
+          <p class="feature-title">Bogotá :</p>
+		  <div class="slider-container">
+    <div class="card-mini">
+        <div class="card-mini-icon"><img src="Fig/LOGOSDA.png"></div>
+        <div class="card-mini-content">
+            <p class="card-mini-subtitle">Secretaría Distrital de Ambiente</p>
+        </div>
+    </div>
+    <div class="card-mini">
+        <div class="card-mini-icon"><img src="Fig/LOGOSDM.png"></div>
+        <div class="card-mini-content">
+            <p class="card-mini-subtitle">Secretaria Distrital de Movilidad</p>
+        </div>
+    </div>
+	<div class="card-mini">
+        <div class="card-mini-icon"><img src="Fig/LOGOSDE.png"></div>
+        <div class="card-mini-content">
+            <p class="card-mini-subtitle">Secretaria Distrital de Desarrollo Económico</p>
+        </div>
+    </div>
+	<div class="card-mini">
+        <div class="card-mini-icon"><img src="Fig/LOGOSDMU.png"></div>
+        <div class="card-mini-content">
+            <p class="card-mini-subtitle">Secretaria Distrital de la Mujer</p>
+        </div>
+    </div>
+	<div class="card-mini">
+        <div class="card-mini-icon"><img src="Fig/LOGOLOGY.png"></div>
+        <div class="card-mini-content">
+            <p class="card-mini-subtitle">LOGYCA</p>
+        </div>
+    </div>
+	
+      </div>
+  </div>
+      </div>
+ <div class="hero">
+        <div class="hero-text">
+          <p class="feature-title">Medellín :</p>
+		  <div class="slider-container">
+    <div class="card-mini">
+        <div class="card-mini-icon"><img src="Fig/Logo_EAFIT.png"></div>
+        <div class="card-mini-content">
+            <p class="card-mini-subtitle">Universidad EAFIT</p>
+        </div>
+    </div>
+    <div class="card-mini">
+        <div class="card-mini-icon"><img src="Fig/LOGOSMDA.png"></div>
+        <div class="card-mini-content">
+            <p class="card-mini-subtitle">Secretaria del Medio Ambiente</p>
+        </div>
+    </div>
+	<div class="card-mini">
+        <div class="card-mini-icon"><img src="Fig/LOGOSMM.png"></div>
+        <div class="card-mini-content">
+            <p class="card-mini-subtitle">Secretaria de Movilidad </p>
+        </div>
+    </div>
+	<div class="card-mini">
+        <div class="card-mini-icon"><img src="Fig/LOGOMU.jpg"></div>
+        <div class="card-mini-content">
+            <p class="card-mini-subtitle">Secretaría de las mujeres de Antioquia</p>
+        </div>
+    </div>
+	<div class="card-mini">
+        <div class="card-mini-icon"><img src="Fig/LOGOAMVA.png"></div>
+        <div class="card-mini-content">
+            <p class="card-mini-subtitle">Área Metropolitana del Valle de Aburrá </p>
+        </div>
+    </div>
+	
+      </div>
+  </div>
+      </div>	  
+	  
+	  
+	  
+	  
+  </div>
+	</section>	
+<section id="medellin" class="view-section">
+        <div class="hero">
+            <div class="container">
+                <h2 class="hero-title">ACCESS MEDELLÍN</h2>
+                <p class="lede">El piloto se concibe como la base para conocer las capacidades de la digitalización para evaluar en condiciones reales de operación, alternativas de movilidad sostenible en el transporte público y en la movilidad activa.<p> 
+				<p class="lede">El piloto se realiza mediante el  monitoreo de buses eléctricos y a combustión, así como de bicicletas eléctricas, se busca establecer una línea base de comparación que facilite el análisis técnico, ambiental y financiero de la electrificación de buses y fomentar el uso y la gestión de bicicletas. <p>
+				<p class="lede">Este busca promover la digitalización y la implementación de estrategias de evitar, cambiar y mejorar y a la toma de decisiones basadas en evidencia que contribuyan a la descarbonización del transporte público y al uso eficiente de la energía.<p>
+
+            </div>
+			</div>
+			<div class="hero">
+			<h3 class="hero-title">Piloto de buses</h3>
+			 <div class="container">
+            <div class="features-grid">
+                <!-- Tarjeta 1: ACCESS BOGOTA -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+						<img src="Fig/M1.png" width="190">
+                    </div>
+                    <h3 class="feature-title">Recolección de datos</h3>
+                    <p class="feature-description">
+                       Integración de datos operativos históricos y en tiempo realal.
+                    </p>
+                 
+                </div>
+				<!-- Tarjeta 2: ACCESS Medellín -->
+                <div class="feature-card" >
+                    <div class="feature-icon">
+						<img src="Fig/M2.png" width="190">
+                    </div>
+                    <h3 class="feature-title">Construicción de plataforma digital </h3>
+                    <p class="feature-description">
+                        Gestión y análisis de datos operativos, energéticos y de emisiones de autobuses.
+                    </p>
+                </div>
+                <!-- Tarjeta 3: Cursos capacitación -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+						<img src="Fig/M3.png" width="90">
+                    </div>
+                    <h3 class="feature-title">Calculó de indicadores</h3>
+                    <p class="feature-description">
+                        Energía, Ambiental, Operativo, Género, Percepción del usuario, Finanzas.
+                    </p>
+                </div>
+				
+				<div class="feature-card" >
+                    <div class="feature-icon">
+						<img src="Fig/M4.png" width="150">
+                    </div>
+                    <h3 class="feature-title">Cursos de capacitación</h3>
+                    <p class="feature-description">
+                        Programas de formación sobre conducción ecológica, herramientas digitales.
+                    </p>
+                </div>
+				
+            </div>
+        </div>
+        </div>
+		<div class="hero">
+			<h3 class="hero-title">Piloto de Bicicletas</h3>
+			 <div class="container">
+            <div class="features-grid">
+                <!-- Tarjeta 1: ACCESS BOGOTA -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+						<img src="Fig/M5.png" width="200">
+                    </div>
+                    <h3 class="feature-title">Recolección de datos</h3>
+                    <p class="feature-description">
+                        Registros históricos y validación con datos de telemetría en tiempo real de bicicletas y motocicletas/ciclomotores eléctricos.
+                    </p>
+                 
+                </div>
+				<!-- Tarjeta 2: ACCESS Medellín -->
+                <div class="feature-card" >
+                    <div class="feature-icon">
+						<img src="Fig/M2.png" width="160">
+                    </div>
+                    <h3 class="feature-title">Construicción de plataforma digital  </h3>
+                    <p class="feature-description">
+                        Gestión y análisis de datos operativos, energéticos y de emisiones de bicicletas y motocicletas/ciclomotores eléctricos.
+                    </p>
+                </div>
+                <!-- Tarjeta 3: Cursos capacitación -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+						<img src="Fig/M3.png" width="90">
+                    </div>
+                    <h3 class="feature-title">Calculó de indicadores</h3>
+                    <p class="feature-description">
+                        Energía, Ambiental, Operativo, Género, Percepción del usuario, Finanzas.
+                    </p>
+                </div>
+				
+				<div class="feature-card" >
+                    <div class="feature-icon">
+						<img src="Fig/M6.png" width="120">
+                    </div>
+                    <h3 class="feature-title">Evaluación de impacto de cambio modal</h3>
+                    <p class="feature-description">
+                        Evaluación de los impactos ambientales, energéticos, operativos y económicos del cambio modal.
+                    </p>
+                </div>
+				
+            </div>
+        </div>
+        </div>
+	</section>		
+<!-- Cursos -->
+<section id="bogota" class="view-section">
+        <div class="hero">
+            <div class="container">
+                <h2 class="hero-title">ACCESS BOGOTÁ</h2>
+                <p class="lede">En la ciudad de Bogotá, ACCESS plantea un piloto que se concibe como un ejercicio integral que incorpora criterios de selección de participantes, arquitectura de datos y de monitoreo, reporte y verificación (MRV), estrategias AVOID–SHIFT–IMPROVE (ASI) priorizadas, gestión de riesgos, indicadores de desempeño y un esquema de gobernanza interinstitucional en concertación con la Secretaría Distrital de Movilidad (SDM) y la Secretaría Distrital de Ambiente (SDA).<p> 
+				<p class="lede">El piloto se desarrollará con la participación de cinco empresas, las cuales gracias a la telemetría activa en sus vehículos permiten construir una línea base robusta para identificar puntos críticos de ineficiencia y priorizar estrategias ASI en sus empresas. <p>
+				<p class="lede">El piloto cuenta con las siguientes etapas:. <p>
+            </div>
+			 <div class="container">
+            <div class="features-grid">
+                <!-- Tarjeta 1: ACCESS BOGOTA -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+						<img src="Fig/PB1.png" width="160">
+                    </div>
+                    <h3 class="feature-title">Recolección de datos</h3>
+                    <p class="feature-description">
+                        Registros históricos y validación con datos de telemetría en tiempo real.
+                    </p>
+                 
+                </div>
+				<!-- Tarjeta 2: ACCESS Medellín -->
+                <div class="feature-card" >
+                    <div class="feature-icon">
+						<img src="Fig/PB2.png" width="160">
+                    </div>
+                    <h3 class="feature-title">Consolidación  de línea base </h3>
+                    <p class="feature-description">
+                        Indicadores operativos, ambientales, financieros y sociales.
+                    </p>
+                </div>
+                <!-- Tarjeta 3: Cursos capacitación -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+						<img src="Fig/PB3.png" width="130">
+                    </div>
+                    <h3 class="feature-title">Priorización de estrategias ASI por empresa</h3>
+                    <p class="feature-description">
+                        Diseño del programa de ecoconducción y definición de escenarios ASI por empresa.
+                    </p>
+                </div>
+				
+				<div class="feature-card" >
+                    <div class="feature-icon">
+						<img src="Fig/PB4.png" width="120">
+                    </div>
+                    <h3 class="feature-title">Implementación del Programa de Ecoconducción</h3>
+                    <p class="feature-description">
+                        Ejecución en condiciones reales y acompañamiento técnico para la adopción de prácticas de conducción.
+                    </p>
+                </div>
+				
+				<div class="feature-card" >
+                    <div class="feature-icon">
+						<img src="Fig/PB5.png" width="160">
+                    </div>
+                    <h3 class="feature-title">Validación de la Implementación </h3>
+                    <p class="feature-description">
+                        Medición de desempeño post-implementación con telemetría, cuantificación de impacto ambiental y operativo y comparación con línea base.
+                    </p>
+                </div>
+            </div>
+        </div>
+		</div>
+	</section>	
+<section id="cursos" class="view-section">
 	 <div class="hero">
         <div class="hero-text">
 		<p class="eyebrow">Ruta hacia la descarbonización</p>
-          <h2>Cursos y capacitaciones ACCESS</h2>
-		  <p class="lede">Bajo el marco del proyecto ACCESS en Colombia se han desarrollado los siguientes cursos de capacitación:.<p> 
-			  <div class="hero-actions">
-				  <article class="module-card">
-					<div class="card-header">
-					  <a href="https://moodle-204211-0.cloudclusters.net/course/view.php?id=5" 
-					   onclick="window.location.href='https://moodle-204211-0.cloudclusters.net/course/view.php?id=5'; return false;" 
-					   class="btn-access">
-					   Curso de Conducción Sostenible
-					</a>
-					  </div>
-					  <div class="card-body">
-					  <img src="Fig/CE.png" width="150">
-					  </div>
-					</article>
-				  <article class="module-card">
-					<div class="card-header">
-					  <a href="https://moodle-204211-0.cloudclusters.net/course/view.php?id=4" 
+          <p class="hero-description">En el marco del proyecto ACCESS en Colombia se han desarrollado los siguientes cursos de capacitación:</p>
+		  <div class="container">
+            <div class="features-grid">
+<!-- Tarjeta 3: Bicicletas -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <a href="https://moodle-204211-0.cloudclusters.net/course/view.php?id=4" 
 					   onclick="window.location.href='https://moodle-204211-0.cloudclusters.net/course/view.php?id=4'; return false;" 
 					   class="btn-access">
-					   Curso de Digitalización: conceptos básicos
+					  <h3 class="feature-title"> Curso de Digitalización</h3>
+					  <img src="Fig/DT.png" width="220">
 					</a>
-					  </div>
-					  <div class="card-body">
-					  <img src="Fig/DT.png" width="150">
-					  </div>
-					</article>
-
-				</div>
-
-
- 
-		
-		
+                    </div>
+                    <p class="feature-description">
+                        Curso diseñado aprender a usar herramientas digitales en el sector transporte y cómo los datos pueden hacer que sea más rentable y ágil.
+                    </p>
+                </div>
+			<!-- Tarjeta 3: Bicicletas -->
+                <div class="feature-card" >
+                    <div class="feature-icon">
+                        <a href="https://moodle-204211-0.cloudclusters.net/course/view.php?id=5" 
+					   onclick="window.location.href='https://moodle-204211-0.cloudclusters.net/course/view.php?id=5'; return false;" 
+					   class="btn-access">
+					  <h3 class="feature-title"> Curso de Conducción Sostenible</h3>
+					  <img src="Fig/CE.png" width="200">
+					</a>
+                    </div>
+                    <p class="feature-description">
+                        Curso diseñado para cambiar los hábitos al volante con tres objetivos claros: ahorrar dinero, reducir la huella ambiental y aumentar la seguridad.
+                    </p>
+                </div>
+				<!-- Tarjeta 3: Bicicletas -->
+                <div class="feature-card" >
+                    <div class="feature-icon">
+                        <a href="https://moodle-204211-0.cloudclusters.net/course/view.php?id=3" 
+					   onclick="window.location.href='https://moodle-204211-0.cloudclusters.net/course/view.php?id=3'; return false;" 
+					   class="btn-access">
+					  <h3 class="feature-title"> Eficiencia Energética I</h3>
+					  <img src="Fig/CEF.png" width="150">
+					</a>
+                    </div>
+                    <p class="feature-description">
+                        Curso diseñado para cambiar los hábitos al volante con tres objetivos claros: ahorrar dinero, reducir la huella ambiental y aumentar la seguridad.
+                    </p>
+                </div>
+				<!-- Tarjeta 3: Bicicletas -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <a href="https://moodle-204211-0.cloudclusters.net/course/view.php?id=2" 
+					   onclick="window.location.href='https://moodle-204211-0.cloudclusters.net/course/view.php?id=2'; return false;" 
+					   class="btn-access">
+					  <h3 class="feature-title"> Eficiencia Energética II</h3>
+					  <img src="Fig/CEF2.png" width="150">
+					</a>
+                    </div>
+                    <p class="feature-description">
+                        Curso diseñado para cambiar los hábitos al volante con tres objetivos claros: ahorrar dinero, reducir la huella ambiental y aumentar la seguridad.
+                    </p>
+                </div>
+				 </div>
+				  </div>
       </div>
-   
   </div>
-       
 	</section>	
-	<section class="tab-panel" data-tab="bogota" aria-label="ACCESS Bogotá">
-	 <div class="hero">
-        <div class="hero-text">
-		<p class="eyebrow">Ruta hacia la descarbonización</p>
-          <h2>ACCESS BOGOTÁ</h2>
-		  <p class="lede">En la ciudad de Bogotá, ACCESS plantea un piloto que se concibe como un ejercicio integral que incorpora criterios de selección de participantes, arquitectura de datos y de monitoreo, reporte y verificación (MRV), estrategias AVOID–SHIFT–IMPROVE (ASI) priorizadas, gestión de riesgos, indicadores de desempeño y un esquema de gobernanza interinstitucional en concertación con la Secretaría Distrital de Movilidad (SDM) y la Secretaría Distrital de Ambiente (SDA).<p> 
-		  <p class="lede">El piloto se desarrollará con la participación de cinco empresas, las cuales gracias a la telemetría activa en sus vehículos permiten construir una línea base robusta para identificar puntos críticos de ineficiencia y priorizar estrategias ASI en sus empresas. <p>
-		  <p><p>
-          <div class="hero-actions">
-            <button class="cta primary active" data-tab="bogota">ACCESS Inicio</button>
-            <button class="cta primary active" data-tab="medellin">ACCESS Medellín</button>
-          </div>
-
-        </div>
-		<div class="hero-visual" aria-hidden="true">
-          <img src="Fig/I1.png" width="580">
-        </div>
-          </div>
-          <div class="hero">
-
-        <div class="hero-text">
-          <p class="eyebrow">Entidades relacionadas</p>
-          <div class="modules-grid">
-		  
-		  
-		  <article class="module-card">
-		  <div class="card-header">
-         <h4>Programa de las Naciones Unidas para el Medio Ambiente</h4>
-		</div>
-		 <div class="card-body">
-         <img src="Fig/LOGOUNEP.png" width="150">
-        </div>
-        </article>
-		
-		
-		<article class="module-card">
-		  <div class="card-header">
-			<h4>Universidad Tecnológica de Pereira</h4>
-		  </div>
-		  <div class="card-body">
-			<img src="Fig/LOGOUTP.png" alt="UTP Logo" width="150">
-		  </div>
-		</article>
-		
-		<article class="module-card">
-		<div class="card-header">
-          <h4>Grupo de Investigación en Gestión Energética </h4>
-		  </div>
-		  <div class="card-body">
-          <img src="Fig/LOGOGEN.png" width="150">
-		  </div>
-        </article>
-		
-        <article class="module-card">
-		<div class="card-header">
-          <h4>LOGYCA</h4>
-		   </div>
-		  <div class="card-body">
-          <img src="Fig/LOGO1.png" width="150">
-		  </div>
-        </article>
-		
-        <article class="module-card">
-		<div class="card-header">
-          <h4>Secretaria Distrital de Ambiente</h4>
-		  </div>
-          <div class="card-body">
-          <img src="Fig/LOGOSDA.png" width="150">
-		  </div>
-        </article>
-		
-		
-		<article class="module-card">
-		<div class="card-header">
-          <h4> Secretaria Distrital de Movilidad </h4>
-		  </div>
-          <div class="card-body">
-          <img src="Fig/LOGOSDM.png" width="150">
-		  </div>
-        </article>
-		
-		<article class="module-card">
-		<div class="card-header">
-          <h4>Secretaria Distrital de Desarrollo Económico</h4>
-		  </div>
-          <div class="card-body">
-          <img src="Fig/LOGOSDE.png" width="150">
-		  </div>
-        </article>
-		
-		<article class="module-card">
-		<div class="card-header">
-          <h4>Secretaria Distrital de la Mujer</h4>
-		  </div>
-		  <div class="card-body">
-          <img src="Fig/LOGOSDMU.png" width="150">
-		  </div>
-        </article>
-      </div>
-   
-  </div>
-       
-      </div>
-      </div>
-	</section>
-<section class="tab-panel" data-tab="medellin" aria-label="ACCESS Medellín">
-	 <div class="hero">
-        <div class="hero-text">
-		<p class="eyebrow">Ruta hacia la descarbonización</p>
-          <h2>ACCESS MEDELLÍN</h2>
-		  <p class="lede">El piloto se concibe como la base para conocer las capacidades de la digitalización para evaluar en condiciones reales de operación, alternativas de movilidad sostenible en el transporte público y en la movilidad activa.<p> 
-		  <p class="lede">El piloto se realiza mediante el  monitoreo de buses eléctricos y a combustión, así como de bicicletas eléctricas, se busca establecer una línea base de comparación que facilite el análisis técnico, ambiental y financiero de la electrificación de buses y fomentar el uso y la gestión de bicicletas. <p>
-		  <p class="lede">Este busca promover la digitalización y la implementación de estrategias de evitar, cambiar y mejorar y a la toma de decisiones basadas en evidencia que contribuyan a la descarbonización del transporte público y al uso eficiente de la energía.<p>
-          <div class="hero-actions">
-            <button class="cta primary active" data-tab="home">ACCESS Inicio</button>
-            <button class="cta primary active" data-tab="bogota">ACCESS Bogotá</button>
-          </div>
-
-        </div>
-		<div class="hero-visual" aria-hidden="true">
-          <img src="Fig/Mede.png" width="500">
-        </div>
-          </div>
-          <div class="hero">
-
-        <div class="hero-text">
-          <p class="eyebrow">Entidades relacionadas</p>
-          <div class="modules-grid">
-		  
-		  
-		  <article class="module-card">
-		  <div class="card-header">
-         <h4>Programa de las Naciones Unidas para el Medio Ambiente</h4>
-		</div>
-		 <div class="card-body">
-         <img src="Fig/LOGOUNEP.png" width="150">
-        </div>
-        </article>
-		
-		
-		<article class="module-card">
-		  <div class="card-header">
-			<h4>Universidad Tecnológica de Pereira</h4>
-		  </div>
-		  <div class="card-body">
-			<img src="Fig/LOGOUTP.png" alt="UTP Logo" width="150">
-		  </div>
-		</article>
-		
-		<article class="module-card">
-		<div class="card-header">
-          <h4>Grupo de Investigación en Gestión Energética </h4>
-		  </div>
-		  <div class="card-body">
-          <img src="Fig/LOGOGEN.png" width="150">
-		  </div>
-        </article>
-		
-        <article class="module-card">
-		<div class="card-header">
-          <h4>Secretaria del Medio Ambiente</h4>
-		   </div>
-		  <div class="card-body">
-          <img src="Fig/LOGO1.png" width="150">
-		  </div>
-        </article>
-		
-        <article class="module-card">
-		<div class="card-header">
-          <h4>Secretaria de Movilidad </h4>
-		  </div>
-          <div class="card-body">
-          <img src="Fig/LOGO2.png" width="150">
-		  </div>
-        </article>
-		
-		
-		<article class="module-card">
-		<div class="card-header">
-          <h4> Secretaría de las mujeres de Antioquia </h4>
-		  </div>
-          <div class="card-body">
-          <img src="Fig/LOGO3.png" width="150">
-		  </div>
-        </article>
-      </div>
-   
-  </div>
-       
-      </div>
-      </div>
-	</section>	
-	
-	
-    <section class="tab-panel" data-tab="buses" aria-label="Electrificación de buses">
-      <div class="section-header">
-        <div>
-          <p class="eyebrow">Buses</p>
-          <h2>Electrificación de flota</h2>
-          <p class="lede">Lista tu flota actual, agrega vehículos eléctricos y compara impacto operacional, ambiental y financiero.</p>
-        </div>
-        <button class="cta ghost" data-tab="home">Volver al inicio</button>
-      </div>
-      <div class="compare-grid">
-        <article class="panel-card combustion">
-          <header>
-            <div>
-              <p class="label">Flota actual</p>
-              <h3>Combustión</h3>
+    <!-- Vista: Indicadores -->
+    <section id="indicadores" class="view-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Visualización de Indicadores</h2>
+                <button class="btn-back" onclick="navigateToHome()">← Volver al Inicio</button>
             </div>
-            <span class="pill">Azul</span>
-          </header>
-          <ul class="item-list">
-            <li><strong>Bus Euro V</strong><span>Consumo 32 L/100km</span></li>
-            <li><strong>Bus articulado</strong><span>Consumo 48 L/100km</span></li>
-            <li><strong>Bus padrón</strong><span>Consumo 28 L/100km</span></li>
-          </ul>
-          <button class="link-btn">+ Agregar bus</button>
-        </article>
 
-        <article class="panel-card electric">
-          <header>
-            <div>
-              <p class="label">Nueva flota</p>
-              <h3>Eléctricos</h3>
+            <div class="controls-panel">
+                <div class="control-group">
+                    <label for="tipo-vehiculo">Tipo de Vehículo</label>
+                    <select id="tipo-vehiculo" class="select-input">
+                        <option value="">Seleccionar...</option>
+                        <option value="buses">Buses</option>
+                        <option value="carga">Vehículos de Carga</option>
+                        <option value="bicicletas">Bicicletas Eléctricas</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="tipo-indicador">Categoría de Indicador</label>
+                    <select id="tipo-indicador" class="select-input">
+                        <option value="">Seleccionar...</option>
+                        <option value="energeticos">Energéticos</option>
+                        <option value="ambientales">Ambientales</option>
+                        <option value="operacionales">Operacionales</option>
+                        <option value="usuarios">Usuarios</option>
+                        <option value="genero">Género</option>
+                    </select>
+                </div>
+                <button class="btn-primary" onclick="generarGrafica()">Generar Gráfica</button>
             </div>
-            <span class="pill">Verde</span>
-          </header>
-          <ul class="item-list">
-            <li><strong>E-bus 12m</strong><span>Rendimiento 1.1 kWh/km</span></li>
-            <li><strong>E-bus articulado</strong><span>Rendimiento 1.7 kWh/km</span></li>
-            <li><strong>E-bus midi</strong><span>Rendimiento 0.9 kWh/km</span></li>
-          </ul>
-          <button class="link-btn">+ Agregar bus</button>
-        </article>
 
-        <article class="panel-card map-card">
-          <header>
-            <p class="label">Ruta</p>
-            <h3>Origen / destino</h3>
-          </header>
-          <div class="map-placeholder">
-            <svg viewBox="0 0 320 240" role="presentation">
-              <rect x="0" y="0" width="320" height="240" rx="18" fill="#0a2342" opacity="0.08" />
-              <path d="M40 200 Q90 140 140 170 T240 140" fill="none" stroke="#0a77ff" stroke-width="4" />
-              <path d="M70 180 Q130 110 200 120 T270 90" fill="none" stroke="#0dbf8c" stroke-width="4" />
-              <circle cx="60" cy="190" r="8" fill="#0a77ff" />
-              <circle cx="260" cy="90" r="8" fill="#0dbf8c" />
-            </svg>
-          </div>
-          <div class="route-meta">
-            <div>
-              <p class="label">Origen</p>
-              <strong>Bogotá</strong>
+            <div class="chart-container">
+                <div class="chart-placeholder">
+                    <svg width="100%" height="400" viewBox="0 0 800 400">
+                        <defs>
+                            <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#4caf50;stop-opacity:0.3" />
+                                <stop offset="100%" style="stop-color:#4caf50;stop-opacity:0.05" />
+                            </linearGradient>
+                        </defs>
+                        <text x="400" y="200" text-anchor="middle" fill="#999" font-size="18">
+                            Seleccione los parámetros y presione "Generar Gráfica"
+                        </text>
+                    </svg>
+                </div>
             </div>
-            <div>
-              <p class="label">Destino</p>
-              <strong>Soacha</strong>
-            </div>
-            <button class="link-btn">Editar ruta</button>
-          </div>
-        </article>
-      </div>
-
-      <div class="form-grid">
-        <div class="panel-card">
-          <header>
-            <p class="label">Vehículo personalizado</p>
-            <h3>Datos clave</h3>
-          </header>
-          <div class="form-row">
-            <label>Peso (kg)<input type="number" placeholder="12000"></label>
-            <label>Área frontal (m²)<input type="number" placeholder="6.2"></label>
-          </div>
-          <div class="form-row">
-            <label>Rendimiento<input type="text" placeholder="32 L/100km"></label>
-            <label>Consumo eléctrico<input type="text" placeholder="1.1 kWh/km"></label>
-          </div>
-          <div class="form-row">
-            <label>Autonomía (km)<input type="number" placeholder="280"></label>
-            <label>Capacidad pasajeros<input type="number" placeholder="80"></label>
-          </div>
-          <button class="cta small">Calcular vehículo</button>
         </div>
-
-        <div class="panel-card stack">
-          <div class="toggle-buttons" role="tablist">
-            <button class="chip active" data-target="operacional">Análisis operacional</button>
-            <button class="chip" data-target="financiero">Análisis financiero</button>
-          </div>
-
-          <div class="analysis" data-panel="operacional">
-            <div class="stats">
-              <div>
-                <p class="label">Energía</p>
-                <strong>1.1 kWh/km</strong>
-                <span class="delta positive">-32% vs combustión</span>
-              </div>
-              <div>
-                <p class="label">Ambiental</p>
-                <strong>-85% CO₂e</strong>
-                <span class="delta positive">Mejor eléctrico</span>
-              </div>
-              <div>
-                <p class="label">Diferencia</p>
-                <strong class="text-green">Eléctrico</strong>
-                <span class="delta positive">+72% eficiencia</span>
-              </div>
-            </div>
-            <button class="link-btn">Ver reporte detallado</button>
-          </div>
-
-          <div class="analysis hidden" data-panel="financiero">
-            <div class="form-row">
-              <label>Costo vehículo<input type="text" placeholder="$ 1,2 B"></label>
-              <label>Costo infraestructura<input type="text" placeholder="$ 800 M"></label>
-            </div>
-            <div class="form-row">
-              <label>Mantención anual<input type="text" placeholder="$ 120 M"></label>
-              <label>Ingresos / financiamiento<input type="text" placeholder="$ 1,6 B"></label>
-            </div>
-            <div class="form-row">
-              <label>Años de análisis<input type="number" placeholder="10"></label>
-              <label>Tasa descuento<input type="number" placeholder="8"></label>
-            </div>
-            <div class="stats">
-              <div>
-                <p class="label">TIR</p>
-                <strong>14.2%</strong>
-                <span class="delta positive">Viable</span>
-              </div>
-              <div>
-                <p class="label">Payback</p>
-                <strong>6.2 años</strong>
-                <span class="delta">Incluye CAPEX</span>
-              </div>
-              <div>
-                <p class="label">Capex</p>
-                <strong>$ 2,0 B</strong>
-                <span class="delta">Bus + cargadores</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section class="tab-panel" data-tab="bicis" aria-label="Bicicletas eléctricas">
-      <div class="section-header">
-        <div>
-          <p class="eyebrow">Bicicletas eléctricas</p>
-          <h2>Micromovilidad con energía limpia</h2>
-          <p class="lede">Compara desempeño energético de bicicletas eléctricas frente a motos en rutas urbanas.</p>
+    <!-- Vista: Electrificación -->
+    <section id="electrificacion" class="view-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Electrificación de Buses</h2>
+                <button class="btn-back" onclick="navigateToHome()">← Volver al Inicio</button>
+            </div>
+
+            <div class="three-column-layout">
+                <!-- Columna 1: Bus de Combustión -->
+                <div class="column">
+                    <h3 class="column-title">Bus de Combustión (ICE)</h3>
+                    <div class="vehicle-list">
+                        <div class="list-item" data-vehicle="bus-diesel-1">
+                            <span class="vehicle-name">Bus Diésel Estándar</span>
+                            <span class="vehicle-spec">12m | 18 ton</span>
+                        </div>
+                        <div class="list-item" data-vehicle="bus-diesel-2">
+                            <span class="vehicle-name">Bus Diésel Euro VI</span>
+                            <span class="vehicle-spec">12m | 17.5 ton</span>
+                        </div>
+                        <div class="list-item" data-vehicle="bus-gas">
+                            <span class="vehicle-name">Bus Gas Natural</span>
+                            <span class="vehicle-spec">12m | 18.2 ton</span>
+                        </div>
+                        <div class="list-item toggle-custom" data-toggle="form-ice">
+                            <span class="vehicle-name">+ Vehículo Personalizado</span>
+                        </div>
+                    </div>
+                    <div id="form-ice" class="custom-form hidden">
+                        <h4>Características Personalizadas</h4>
+                        <input type="number" placeholder="Peso (kg)" class="form-input">
+                        <input type="number" placeholder="Área Frontal (m²)" class="form-input">
+                        <input type="number" placeholder="Rendimiento (km/gal)" class="form-input">
+                        <button class="btn-secondary">Guardar</button>
+                    </div>
+                    <div class="vehicle-details">
+                        <h4>Especificaciones</h4>
+                        <p class="detail-text">Seleccione un vehículo para ver detalles</p>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Mapa -->
+                <div class="column">
+                    <h3 class="column-title">Ruta de Operación</h3>
+                    <div class="map-placeholder">
+                        <svg width="100%" height="400" viewBox="0 0 400 400">
+                            <!-- Mapa de Colombia simplificado -->
+                            <rect width="400" height="400" fill="#e3f2fd"/>
+                            <path d="M 150 100 Q 200 120 220 180 Q 230 220 200 280 Q 180 320 150 350 Q 120 320 100 280 Q 80 220 100 180 Q 120 120 150 100" 
+                                  fill="#c8e6c9" stroke="#4caf50" stroke-width="2"/>
+                            <circle cx="180" cy="200" r="6" fill="#2196f3" opacity="0.7"/>
+                            <circle cx="150" cy="280" r="6" fill="#f44336" opacity="0.7"/>
+                            <path d="M 180 200 Q 165 240 150 280" fill="none" stroke="#2196f3" stroke-width="2" stroke-dasharray="5,5"/>
+                            <text x="200" y="200" font-size="12" fill="#2196f3">Origen</text>
+                            <text x="160" y="295" font-size="12" fill="#f44336">Destino</text>
+                        </svg>
+                    </div>
+                    <div class="route-inputs">
+                        <input type="text" placeholder="Punto de Origen" class="form-input">
+                        <input type="text" placeholder="Punto de Destino" class="form-input">
+                    </div>
+                </div>
+
+                <!-- Columna 3: Bus Eléctrico -->
+                <div class="column">
+                    <h3 class="column-title">Bus Eléctrico (EV)</h3>
+                    <div class="vehicle-list">
+                        <div class="list-item" data-vehicle="bus-ev-1">
+                            <span class="vehicle-name">Bus Eléctrico BYD K9</span>
+                            <span class="vehicle-spec">12m | 18 ton | 324 kWh</span>
+                        </div>
+                        <div class="list-item" data-vehicle="bus-ev-2">
+                            <span class="vehicle-name">Bus Eléctrico Yutong E12</span>
+                            <span class="vehicle-spec">12m | 17.8 ton | 281 kWh</span>
+                        </div>
+                        <div class="list-item" data-vehicle="bus-ev-3">
+                            <span class="vehicle-name">Bus Eléctrico Proterra</span>
+                            <span class="vehicle-spec">12m | 17.5 ton | 440 kWh</span>
+                        </div>
+                        <div class="list-item toggle-custom" data-toggle="form-ev">
+                            <span class="vehicle-name">+ Vehículo Personalizado</span>
+                        </div>
+                    </div>
+                    <div id="form-ev" class="custom-form hidden">
+                        <h4>Características Personalizadas</h4>
+                        <input type="number" placeholder="Peso (kg)" class="form-input">
+                        <input type="number" placeholder="Área Frontal (m²)" class="form-input">
+                        <input type="number" placeholder="Capacidad Batería (kWh)" class="form-input">
+                        <input type="number" placeholder="Consumo (kWh/km)" class="form-input">
+                        <button class="btn-secondary">Guardar</button>
+                    </div>
+                    <div class="vehicle-details">
+                        <h4>Especificaciones</h4>
+                        <p class="detail-text">Seleccione un vehículo para ver detalles</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn-analysis btn-financial" onclick="openModal('modal-financiero')">
+                    Análisis Financiero
+                </button>
+                <button class="btn-analysis btn-operational" onclick="openModal('modal-operacional')">
+                    Análisis Operacional
+                </button>
+            </div>
         </div>
-        <button class="cta ghost" data-tab="home">Volver al inicio</button>
-      </div>
-      <div class="dual-grid">
-        <article class="panel-card">
-          <header>
-            <p class="label">Vehículos</p>
-            <h3>Moto vs e-bike</h3>
-          </header>
-          <ul class="item-list">
-            <li><strong>Moto 125cc</strong><span>2.6 L/100km</span></li>
-            <li><strong>Moto 150cc</strong><span>3.0 L/100km</span></li>
-            <li><strong>E-bike urbana</strong><span>0.6 kWh/100km</span></li>
-            <li><strong>E-bike cargo</strong><span>0.9 kWh/100km</span></li>
-          </ul>
-          <button class="link-btn">+ Agregar vehículo</button>
-        </article>
-        <article class="panel-card map-card">
-          <header>
-            <p class="label">Ruta</p>
-            <h3>Selecciona en mapa</h3>
-          </header>
-          <div class="map-placeholder">
-            <svg viewBox="0 0 320 240" role="presentation">
-              <rect x="0" y="0" width="320" height="240" rx="18" fill="#0a2342" opacity="0.08" />
-              <path d="M50 210 Q120 120 190 150 T270 90" fill="none" stroke="#f7c948" stroke-width="4" />
-              <circle cx="60" cy="205" r="8" fill="#0a77ff" />
-              <circle cx="260" cy="95" r="8" fill="#0dbf8c" />
-            </svg>
-          </div>
-          <div class="stats compact">
-            <div>
-              <p class="label">Distancia</p>
-              <strong>12.4 km</strong>
-            </div>
-            <div>
-              <p class="label">Pendiente</p>
-              <strong>4.2%</strong>
-            </div>
-            <div>
-              <p class="label">Tiempo estimado</p>
-              <strong>36 min</strong>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="stats-grid">
-        <article class="panel-card">
-          <header><p class="label">Energía</p><h3>Consumo</h3></header>
-          <p class="big-text">-78% kWh vs moto</p>
-          <p class="delta positive">Ruta optimizada</p>
-        </article>
-        <article class="panel-card">
-          <header><p class="label">Ambiental</p><h3>CO₂e</h3></header>
-          <p class="big-text">-92% emisiones</p>
-          <p class="delta positive">Mejor e-bike</p>
-        </article>
-        <article class="panel-card">
-          <header><p class="label">Operacional</p><h3>Coste/km</h3></header>
-          <p class="big-text">$ 65 COP</p>
-          <p class="delta">Incluye energía</p>
-        </article>
-      </div>
     </section>
 
-    <section class="tab-panel" data-tab="carga" aria-label="Vehículos de carga">
-      <div class="section-header">
-        <div>
-          <p class="eyebrow">Carga</p>
-          <h2>Optimiza renovación de flota</h2>
-          <p class="lede">Compara dos vehículos de combustión, evalúa eficiencia y escenarios de incentivos Fom Carga.</p>
+    <!-- Vista: Bicicletas -->
+    <section id="bicicletas" class="view-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Bicicletas Eléctricas</h2>
+                <button class="btn-back" onclick="navigateToHome()">← Volver al Inicio</button>
+            </div>
+
+            <div class="split-layout">
+                <!-- Panel Izquierdo: Selección -->
+                <div class="panel">
+                    <h3 class="panel-title">Selección de Vehículos</h3>
+                    <div class="vehicle-group">
+                        <h4>Motocicleta (Base de Comparación)</h4>
+                        <select class="select-input">
+                            <option value="">Seleccionar...</option>
+                            <option value="moto-1">Honda Wave 110cc</option>
+                            <option value="moto-2">Yamaha Crypton 115cc</option>
+                            <option value="moto-3">Suzuki AX100</option>
+                        </select>
+                    </div>
+                    <div class="vehicle-group">
+                        <h4>Bicicleta Eléctrica</h4>
+                        <select class="select-input">
+                            <option value="">Seleccionar...</option>
+                            <option value="ebike-1">E-Bike Urban 250W</option>
+                            <option value="ebike-2">E-Bike Cargo 500W</option>
+                            <option value="ebike-3">E-Bike Sport 350W</option>
+                        </select>
+                    </div>
+                    <button class="btn-primary full-width" onclick="calcularImpacto()">Calcular Impacto</button>
+                </div>
+
+                <!-- Panel Derecho: Mapa -->
+                <div class="panel">
+                    <h3 class="panel-title">Ruta de Operación</h3>
+                    <div class="map-placeholder">
+                        <svg width="100%" height="300" viewBox="0 0 400 300">
+                            <rect width="400" height="300" fill="#e8f5e9"/>
+                            <path d="M 50 150 L 100 100 L 200 120 L 300 80 L 350 150" 
+                                  fill="none" stroke="#4caf50" stroke-width="3"/>
+                            <circle cx="50" cy="150" r="8" fill="#2196f3"/>
+                            <circle cx="350" cy="150" r="8" fill="#f44336"/>
+                            <text x="20" y="170" font-size="14" fill="#2196f3">Origen</text>
+                            <text x="320" y="170" font-size="14" fill="#f44336">Destino</text>
+                        </svg>
+                    </div>
+                    <div class="route-inputs">
+                        <input type="text" placeholder="Punto de Origen" class="form-input">
+                        <input type="text" placeholder="Punto de Destino" class="form-input">
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-section hidden" id="results-bicicletas">
+                <h3 class="section-subtitle">Resultados del Análisis</h3>
+                <div class="indicator-cards">
+                    <div class="indicator-card">
+                        <div class="indicator-icon">⚡</div>
+                        <h4>Consumo Energético</h4>
+                        <p class="indicator-value">-78%</p>
+                        <p class="indicator-label">Reducción vs Motocicleta</p>
+                    </div>
+                    <div class="indicator-card">
+                        <div class="indicator-icon">🌱</div>
+                        <h4>Emisiones CO₂</h4>
+                        <p class="indicator-value">-95%</p>
+                        <p class="indicator-label">Reducción anual</p>
+                    </div>
+                    <div class="indicator-card">
+                        <div class="indicator-icon">💰</div>
+                        <h4>Costo Operacional</h4>
+                        <p class="indicator-value">-65%</p>
+                        <p class="indicator-label">Ahorro anual</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <button class="cta ghost" data-tab="home">Volver al inicio</button>
-      </div>
-      <div class="compare-grid">
-        <article class="panel-card combustion">
-          <header>
-            <p class="label">Actual</p>
-            <h3>Carga A</h3>
-          </header>
-          <ul class="item-list">
-            <li><strong>Camión 8T</strong><span>36 L/100km</span></li>
-            <li><strong>Euro IV</strong><span>SOx 1.2 g/km</span></li>
-          </ul>
-          <button class="link-btn">+ Agregar</button>
-        </article>
-        <article class="panel-card combustion alt">
-          <header>
-            <p class="label">Escenario</p>
-            <h3>Carga B</h3>
-          </header>
-          <ul class="item-list">
-            <li><strong>Camión 12T</strong><span>42 L/100km</span></li>
-            <li><strong>Euro VI</strong><span>SOx 0.5 g/km</span></li>
-          </ul>
-          <button class="link-btn">+ Agregar</button>
-        </article>
-        <article class="panel-card map-card">
-          <header><p class="label">Ruta</p><h3>Origen / destino</h3></header>
-          <div class="map-placeholder">
-            <svg viewBox="0 0 320 240" role="presentation">
-              <rect x="0" y="0" width="320" height="240" rx="18" fill="#0a2342" opacity="0.08" />
-              <path d="M40 210 Q100 130 180 140 T260 110" fill="none" stroke="#0a77ff" stroke-width="4" />
-              <path d="M50 150 Q130 90 210 120 T280 80" fill="none" stroke="#f7c948" stroke-width="4" />
-              <circle cx="50" cy="210" r="8" fill="#0a77ff" />
-              <circle cx="270" cy="80" r="8" fill="#f7c948" />
-            </svg>
-          </div>
-          <div class="route-meta">
-            <div>
-              <p class="label">KM</p>
-              <strong>86 km</strong>
-            </div>
-            <div>
-              <p class="label">Carga útil</p>
-              <strong>8.5 T</strong>
-            </div>
-            <button class="link-btn">Editar ruta</button>
-          </div>
-        </article>
-      </div>
-      <div class="panel-card stack">
-        <div class="toggle-buttons" role="tablist">
-          <button class="chip active" data-target="operacional-carga">Energía y ambiental</button>
-          <button class="chip" data-target="financiero-carga">Financiero</button>
-        </div>
-        <div class="analysis" data-panel="operacional-carga">
-          <div class="stats">
-            <div>
-              <p class="label">Consumo</p>
-              <strong>42 → 36 L/100km</strong>
-              <span class="delta positive">-14%</span>
-            </div>
-            <div>
-              <p class="label">CO₂e</p>
-              <strong>-18%</strong>
-              <span class="delta positive">Escenario B</span>
-            </div>
-            <div>
-              <p class="label">SOx</p>
-              <strong>-58%</strong>
-              <span class="delta positive">Euro VI</span>
-            </div>
-          </div>
-        </div>
-        <div class="analysis hidden" data-panel="financiero-carga">
-          <div class="stats">
-            <div>
-              <p class="label">CAPEX</p>
-              <strong>$ 1,4 B</strong>
-              <span class="delta">Vehículo + incentivos</span>
-            </div>
-            <div>
-              <p class="label">Payback</p>
-              <strong>5.8 años</strong>
-              <span class="delta positive">Con Fom Carga</span>
-            </div>
-            <div>
-              <p class="label">Ahorro OPEX</p>
-              <strong>-$ 180 M/año</strong>
-              <span class="delta positive">Menor diésel</span>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section class="tab-panel" data-tab="eco" aria-label="Eco-conducción">
-      <div class="section-header">
-        <div>
-          <p class="eyebrow">Eco-conducción</p>
-          <h2>Entrenamiento y seguimiento</h2>
-          <p class="lede">Carga registros pre/post formación para identificar mejoras en hábitos de conducción.</p>
+    <!-- Vista: Carga -->
+    <section id="carga" class="view-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Vehículos de Carga - Programa Fom Carga</h2>
+                <button class="btn-back" onclick="navigateToHome()">← Volver al Inicio</button>
+            </div>
+            <p class="section-description">
+                Análisis de modernización de flotas de carga con beneficios del programa Fom Carga de la Secretaría Ambiental.
+            </p>
+
+            <div class="three-column-layout">
+                <!-- Columna 1: Vehículo Actual -->
+                <div class="column">
+                    <h3 class="column-title">Vehículo Actual</h3>
+                    <div class="vehicle-list">
+                        <div class="list-item" data-vehicle="cargo-old-1">
+                            <span class="vehicle-name">Camión Euro II (2005)</span>
+                            <span class="vehicle-spec">7 ton | Diésel</span>
+                        </div>
+                        <div class="list-item" data-vehicle="cargo-old-2">
+                            <span class="vehicle-name">Camión Euro III (2010)</span>
+                            <span class="vehicle-spec">10 ton | Diésel</span>
+                        </div>
+                        <div class="list-item" data-vehicle="cargo-old-3">
+                            <span class="vehicle-name">Camión Básico (2008)</span>
+                            <span class="vehicle-spec">5 ton | Diésel</span>
+                        </div>
+                        <div class="list-item toggle-custom" data-toggle="form-cargo-old">
+                            <span class="vehicle-name">+ Vehículo Personalizado</span>
+                        </div>
+                    </div>
+                    <div id="form-cargo-old" class="custom-form hidden">
+                        <h4>Características Actuales</h4>
+                        <input type="number" placeholder="Peso (kg)" class="form-input">
+                        <input type="number" placeholder="Año" class="form-input">
+                        <input type="number" placeholder="Rendimiento (km/gal)" class="form-input">
+                        <button class="btn-secondary">Guardar</button>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Mapa -->
+                <div class="column">
+                    <h3 class="column-title">Ruta Logística</h3>
+                    <div class="map-placeholder">
+                        <svg width="100%" height="400" viewBox="0 0 400 400">
+                            <rect width="400" height="400" fill="#fff3e0"/>
+                            <path d="M 150 100 Q 200 120 220 180 Q 230 220 200 280 Q 180 320 150 350 Q 120 320 100 280 Q 80 220 100 180 Q 120 120 150 100" 
+                                  fill="#ffe0b2" stroke="#ff9800" stroke-width="2"/>
+                            <circle cx="180" cy="180" r="6" fill="#2196f3"/>
+                            <circle cx="140" cy="260" r="6" fill="#f44336"/>
+                            <path d="M 180 180 L 160 220 L 140 260" fill="none" stroke="#ff9800" stroke-width="2"/>
+                            <text x="190" y="180" font-size="12" fill="#2196f3">Bodega</text>
+                            <text x="150" y="265" font-size="12" fill="#f44336">Entrega</text>
+                        </svg>
+                    </div>
+                    <div class="route-inputs">
+                        <input type="text" placeholder="Punto de Origen" class="form-input">
+                        <input type="text" placeholder="Punto de Destino" class="form-input">
+                    </div>
+                </div>
+
+                <!-- Columna 3: Vehículo Nuevo -->
+                <div class="column">
+                    <h3 class="column-title">Vehículo Nuevo (Modernización)</h3>
+                    <div class="vehicle-list">
+                        <div class="list-item" data-vehicle="cargo-new-1">
+                            <span class="vehicle-name">Camión Euro VI (2024)</span>
+                            <span class="vehicle-spec">7 ton | Diésel Limpio</span>
+                        </div>
+                        <div class="list-item" data-vehicle="cargo-new-2">
+                            <span class="vehicle-name">Camión Gas Natural</span>
+                            <span class="vehicle-spec">10 ton | GNV</span>
+                        </div>
+                        <div class="list-item" data-vehicle="cargo-new-3">
+                            <span class="vehicle-name">Camión Híbrido</span>
+                            <span class="vehicle-spec">8 ton | Híbrido Diésel</span>
+                        </div>
+                        <div class="list-item toggle-custom" data-toggle="form-cargo-new">
+                            <span class="vehicle-name">+ Vehículo Personalizado</span>
+                        </div>
+                    </div>
+                    <div id="form-cargo-new" class="custom-form hidden">
+                        <h4>Características Nuevas</h4>
+                        <input type="number" placeholder="Peso (kg)" class="form-input">
+                        <input type="text" placeholder="Tecnología" class="form-input">
+                        <input type="number" placeholder="Rendimiento (km/gal)" class="form-input">
+                        <button class="btn-secondary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn-analysis btn-financial" onclick="openModal('modal-financiero-carga')">
+                    Análisis Financiero con Fom Carga
+                </button>
+                <button class="btn-analysis btn-operational" onclick="openModal('modal-operacional-carga')">
+                    Análisis Operacional
+                </button>
+            </div>
         </div>
-        <button class="cta ghost" data-tab="home">Volver al inicio</button>
-      </div>
-      <div class="dual-grid">
-        <article class="panel-card">
-          <header><p class="label">Datos</p><h3>Monitoreo</h3></header>
-          <div class="upload-zone">
-            <p>Sube archivo pre-formación</p>
-            <button class="link-btn">Cargar CSV</button>
-          </div>
-          <div class="upload-zone">
-            <p>Sube archivo post-formación</p>
-            <button class="link-btn">Cargar CSV</button>
-          </div>
-        </article>
-        <article class="panel-card">
-          <header><p class="label">Recomendaciones</p><h3>Acciones sugeridas</h3></header>
-          <ul class="checklist">
-            <li>Reducir aceleraciones bruscas en salidas</li>
-            <li>Usar frenado regenerativo en descensos</li>
-            <li>Planear paradas para minimizar ralentí</li>
-          </ul>
-        </article>
-      </div>
-      <div class="stats-grid">
-        <article class="panel-card">
-          <header><p class="label">Aceleración brusca</p><h3>Antes vs después</h3></header>
-          <p class="big-text">-34%</p>
-          <p class="delta positive">Menos eventos</p>
-        </article>
-        <article class="panel-card">
-          <header><p class="label">Frenado brusco</p><h3>Antes vs después</h3></header>
-          <p class="big-text">-28%</p>
-          <p class="delta positive">Mejora</p>
-        </article>
-        <article class="panel-card">
-          <header><p class="label">Uso energía</p><h3>Eficiencia</h3></header>
-          <p class="big-text">+11%</p>
-          <p class="delta positive">Post entrenamiento</p>
-        </article>
-      </div>
     </section>
 
-    <section class="tab-panel" data-tab="indicadores" aria-label="Indicadores del piloto">
-      <div class="section-header">
-        <div>
-          <p class="eyebrow">KPIs del piloto</p>
-          <h2>Visualización de indicadores</h2>
-          <p class="lede">Selecciona datasets (buses, carga, bicis) y mira indicadores energéticos, ambientales, operacionales, usuarios y género.</p>
-        </div>
-        <button class="cta ghost" data-tab="home">Volver al inicio</button>
-      </div>
-      <div class="controls-row">
-        <div class="panel-card mini">
-          <p class="label">Dataset</p>
-          <div class="pill-row">
-            <button class="chip active">Buses</button>
-            <button class="chip">Carga</button>
-            <button class="chip">Bicis</button>
-          </div>
-        </div>
-        <div class="panel-card mini">
-          <p class="label">Indicadores</p>
-          <div class="pill-row">
-            <span class="badge">Energéticos</span>
-            <span class="badge">Ambientales</span>
-            <span class="badge">Operacionales</span>
-            <span class="badge">Usuarios</span>
-            <span class="badge">Género</span>
-          </div>
-        </div>
-      </div>
-      <div class="charts-grid">
-        <article class="panel-card chart-card">
-          <header><p class="label">Energía</p><h3>Consumo por km</h3></header>
-          <div class="chart-placeholder">
-            <div class="bar" style="--v:45%"></div>
-            <div class="bar" style="--v:62%"></div>
-            <div class="bar" style="--v:28%"></div>
-          </div>
-        </article>
-        <article class="panel-card chart-card">
-          <header><p class="label">Ambiental</p><h3>CO₂e evitado</h3></header>
-          <div class="chart-placeholder">
-            <div class="bar alt" style="--v:70%"></div>
-            <div class="bar alt" style="--v:52%"></div>
-            <div class="bar alt" style="--v:80%"></div>
-          </div>
-        </article>
-        <article class="panel-card chart-card">
-          <header><p class="label">Operacional</p><h3>Disponibilidad</h3></header>
-          <div class="chart-placeholder dots">
-            <div class="dot" style="--v:78%"></div>
-            <div class="dot" style="--v:64%"></div>
-            <div class="dot" style="--v:92%"></div>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
+    <!-- Vista: Eco-Conducción -->
+    <section id="ecoconductor" class="view-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Eco-Conducción</h2>
+                <button class="btn-back" onclick="navigateToHome()">← Volver al Inicio</button>
+            </div>
+            <p class="section-description">
+                Evaluación del impacto de capacitaciones en eco-conducción mediante análisis comparativo de indicadores.
+            </p>
 
-  <script src="./js/main.js"></script>
+            <div class="split-layout">
+                <!-- Panel Izquierdo: Upload -->
+                <div class="panel">
+                    <h3 class="panel-title">Carga de Datos de Monitoreo</h3>
+                    <div class="upload-section">
+                        <h4>Datos PRE-Capacitación</h4>
+                        <div class="upload-zone" id="upload-pre">
+                            <svg width="60" height="60" viewBox="0 0 60 60">
+                                <path d="M30 15 L30 40 M20 30 L30 20 L40 30" stroke="#4caf50" stroke-width="3" fill="none"/>
+                                <rect x="15" y="42" width="30" height="3" fill="#4caf50"/>
+                            </svg>
+                            <p>Arrastre archivo CSV o haga clic para seleccionar</p>
+                            <input type="file" accept=".csv" class="file-input" hidden>
+                        </div>
+                    </div>
+                    <div class="upload-section">
+                        <h4>Datos POST-Capacitación</h4>
+                        <div class="upload-zone" id="upload-post">
+                            <svg width="60" height="60" viewBox="0 0 60 60">
+                                <path d="M30 15 L30 40 M20 30 L30 20 L40 30" stroke="#2196f3" stroke-width="3" fill="none"/>
+                                <rect x="15" y="42" width="30" height="3" fill="#2196f3"/>
+                            </svg>
+                            <p>Arrastre archivo CSV o haga clic para seleccionar</p>
+                            <input type="file" accept=".csv" class="file-input" hidden>
+                        </div>
+                    </div>
+                    <button class="btn-primary full-width" onclick="evaluarDesempeno()">Evaluar Desempeño</button>
+                </div>
+
+                <!-- Panel Derecho: Resultados -->
+                <div class="panel">
+                    <h3 class="panel-title">Resultados y Recomendaciones</h3>
+                    <div class="comparison-charts" id="eco-results">
+                        <div class="chart-item">
+                            <h4>Aceleraciones Bruscas</h4>
+                            <div class="bar-comparison">
+                                <div class="bar-row">
+                                    <span class="bar-label">PRE</span>
+                                    <div class="bar-track">
+                                        <div class="bar-fill bar-pre" style="width: 85%">85%</div>
+                                    </div>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">POST</span>
+                                    <div class="bar-track">
+                                        <div class="bar-fill bar-post" style="width: 42%">42%</div>
+                                    </div>
+                                </div>
+                                <p class="improvement">Mejora: -43%</p>
+                            </div>
+                        </div>
+
+                        <div class="chart-item">
+                            <h4>Frenados Bruscos</h4>
+                            <div class="bar-comparison">
+                                <div class="bar-row">
+                                    <span class="bar-label">PRE</span>
+                                    <div class="bar-track">
+                                        <div class="bar-fill bar-pre" style="width: 72%">72%</div>
+                                    </div>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">POST</span>
+                                    <div class="bar-track">
+                                        <div class="bar-fill bar-post" style="width: 38%">38%</div>
+                                    </div>
+                                </div>
+                                <p class="improvement">Mejora: -34%</p>
+                            </div>
+                        </div>
+
+                        <div class="chart-item">
+                            <h4>Exceso de RPM</h4>
+                            <div class="bar-comparison">
+                                <div class="bar-row">
+                                    <span class="bar-label">PRE</span>
+                                    <div class="bar-track">
+                                        <div class="bar-fill bar-pre" style="width: 65%">65%</div>
+                                    </div>
+                                </div>
+                                <div class="bar-row">
+                                    <span class="bar-label">POST</span>
+                                    <div class="bar-track">
+                                        <div class="bar-fill bar-post" style="width: 28%">28%</div>
+                                    </div>
+                                </div>
+                                <p class="improvement">Mejora: -37%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recommendations-box">
+                        <h4>Recomendaciones para el Operador</h4>
+                        <ul class="recommendations-list">
+                            <li>Mantener RPM entre 1500-2500 para optimizar consumo de combustible</li>
+                            <li>Anticipar frenados y reducir velocidad de forma gradual</li>
+                            <li>Evitar aceleraciones abruptas en arranques desde semáforos</li>
+                            <li>Utilizar freno motor en descensos prolongados</li>
+                            <li>Mantener distancia de seguridad para reducir frenados innecesarios</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal: Análisis Operacional -->
+    <div id="modal-operacional" class="modal-overlay">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3>Análisis Operacional - Comparación Energética y Ambiental</h3>
+                <button class="btn-close" onclick="closeModal('modal-operacional')">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="comparison-layout">
+                    <!-- Combustión -->
+                    <div class="comparison-column comparison-ice">
+                        <h4>Bus de Combustión</h4>
+                        <div class="indicator-list">
+                            <div class="indicator-item">
+                                <span class="indicator-name">Consumo Energético</span>
+                                <span class="indicator-value">45.2 kWh/km</span>
+                            </div>
+                            <div class="indicator-item">
+                                <span class="indicator-name">Emisiones CO₂</span>
+                                <span class="indicator-value">1,280 g/km</span>
+                            </div>
+                            <div class="indicator-item">
+                                <span class="indicator-name">Emisiones NOx</span>
+                                <span class="indicator-value">8.5 g/km</span>
+                            </div>
+                            <div class="indicator-item">
+                                <span class="indicator-name">Partículas PM2.5</span>
+                                <span class="indicator-value">0.42 g/km</span>
+                            </div>
+                            <div class="indicator-item">
+                                <span class="indicator-name">Costo Energía/km</span>
+                                <span class="indicator-value">$2,850 COP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Centro: Comparación -->
+                    <div class="comparison-center">
+                        <div class="winner-badge winner-ev">
+                            <svg width="80" height="80" viewBox="0 0 80 80">
+                                <circle cx="40" cy="40" r="35" fill="#4caf50" opacity="0.2"/>
+                                <path d="M25 40 L35 50 L55 30" stroke="#4caf50" stroke-width="4" fill="none"/>
+                            </svg>
+                            <p class="winner-text">Bus Eléctrico</p>
+                            <p class="winner-percentage">78% Mejor</p>
+                            <p class="winner-detail">en Emisiones Totales</p>
+                        </div>
+                        <div class="comparison-details">
+                            <div class="detail-row">
+                                <span>Eficiencia Energética</span>
+                                <span class="badge-ev">+62% EV</span>
+                            </div>
+                            <div class="detail-row">
+                                <span>Costo Operacional</span>
+                                <span class="badge-ev">+55% EV</span>
+                            </div>
+                            <div class="detail-row">
+                                <span>Impacto Ambiental</span>
+                                <span class="badge-ev">+95% EV</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Eléctrico -->
+                    <div class="comparison-column comparison-ev">
+                        <h4>Bus Eléctrico</h4>
+                        <div class="indicator-list">
+                            <div class="indicator-item">
+                                <span class="indicator-name">Consumo Energético</span>
+                                <span class="indicator-value">1.8 kWh/km</span>
+                            </div>
+                            <div class="indicator-item">
+                                <span class="indicator-name">Emisiones CO₂</span>
+                                <span class="indicator-value">0 g/km</span>
+                            </div>
+                            <div class="indicator-item">
+                                <span class="indicator-name">Emisiones NOx</span>
+                                <span class="indicator-value">0 g/km</span>
+                            </div>
+                            <div class="indicator-item">
+                                <span class="indicator-name">Partículas PM2.5</span>
+                                <span class="indicator-value">0 g/km</span>
+                            </div>
+                            <div class="indicator-item">
+                                <span class="indicator-name">Costo Energía/km</span>
+                                <span class="indicator-value">$890 COP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Análisis Financiero -->
+    <div id="modal-financiero" class="modal-overlay">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3>Análisis Financiero - TCO (Total Cost of Ownership)</h3>
+                <button class="btn-close" onclick="closeModal('modal-financiero')">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="financial-form">
+                    <div class="form-grid">
+                        <div class="form-section">
+                            <h4>Costos del Vehículo</h4>
+                            <input type="number" placeholder="Precio Bus Combustión (COP)" class="form-input">
+                            <input type="number" placeholder="Precio Bus Eléctrico (COP)" class="form-input">
+                            <input type="number" placeholder="Valor Residual (%)" class="form-input">
+                        </div>
+                        <div class="form-section">
+                            <h4>Infraestructura</h4>
+                            <input type="number" placeholder="Costo Cargador (COP)" class="form-input">
+                            <input type="number" placeholder="Instalación Eléctrica (COP)" class="form-input">
+                            <input type="number" placeholder="Adecuación Patio (COP)" class="form-input">
+                        </div>
+                        <div class="form-section">
+                            <h4>Operación y Mantenimiento</h4>
+                            <input type="number" placeholder="Km anuales" class="form-input">
+                            <input type="number" placeholder="Costo Energía (COP/kWh)" class="form-input">
+                            <input type="number" placeholder="Costo Diésel (COP/gal)" class="form-input">
+                            <input type="number" placeholder="Mantenimiento Anual (COP)" class="form-input">
+                        </div>
+                    </div>
+                    <div class="time-analysis">
+                        <label for="anos-analisis">Periodo de Análisis (años)</label>
+                        <input type="number" id="anos-analisis" value="10" min="1" max="20" class="form-input">
+                        <button class="btn-primary" onclick="calcularTCO()">Calcular TCO</button>
+                    </div>
+                </div>
+
+                <div class="financial-results hidden" id="tco-results">
+                    <h4>Resultados del Análisis Financiero</h4>
+                    <div class="results-grid">
+                        <div class="result-card result-ice">
+                            <h5>Bus de Combustión</h5>
+                            <div class="result-item">
+                                <span>TCO Total (10 años)</span>
+                                <strong>$1,850,000,000 COP</strong>
+                            </div>
+                            <div class="result-item">
+                                <span>Costo por Km</span>
+                                <strong>$3,200 COP</strong>
+                            </div>
+                            <div class="result-item">
+                                <span>TIR</span>
+                                <strong>8.5%</strong>
+                            </div>
+                        </div>
+                        <div class="result-card result-ev">
+                            <h5>Bus Eléctrico</h5>
+                            <div class="result-item">
+                                <span>TCO Total (10 años)</span>
+                                <strong>$1,420,000,000 COP</strong>
+                            </div>
+                            <div class="result-item">
+                                <span>Costo por Km</span>
+                                <strong>$1,950 COP</strong>
+                            </div>
+                            <div class="result-item">
+                                <span>TIR</span>
+                                <strong>12.3%</strong>
+                            </div>
+                            <div class="result-highlight">
+                                <strong>Ahorro Total: $430,000,000 COP (23%)</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payback-info">
+                        <p><strong>Periodo de Retorno (Payback):</strong> 6.2 años</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Análisis Operacional Carga -->
+    <div id="modal-operacional-carga" class="modal-overlay">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3>Análisis Operacional - Modernización de Carga</h3>
+                <button class="btn-close" onclick="closeModal('modal-operacional-carga')">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="comparison-layout">
+                    <div class="comparison-column comparison-ice">
+                        <h4>Vehículo Actual (Euro II)</h4>
+                        <div class="indicator-list">
+                            <div class="indicator-item">
+                                <span class="indicator-name">Consumo Combustible</span>
+                                <span class="indicator-value">8.5 km/gal</span>
+                            </div>
+                            <div class="indicator-item">
+                                <span class="indicator-name">Emisiones CO₂</span>
+                                <span class="indicator-value">980 g/km</span>
+                            </div>
+                            <div class="indicator-item">
+                                <span class="indicator-name">Emisiones NOx</span>
+                                <span class="indicator-value">12.8 g/km</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comparison-center">
+                        <div class="winner-badge winner-ev">
+                            <p class="winner-text">Vehículo Nuevo</p>
+                            <p class="winner-percentage">45% Mejor</p>
+                        </div>
+                    </div>
+                    <div class="comparison-column comparison-ev">
+                        <h4>Vehículo Nuevo (Euro VI)</h4>
+                        <div class="indicator-list">
+                            <div class="indicator-item">
+                                <span class="indicator-name">Consumo Combustible</span>
+                                <span class="indicator-value">12.5 km/gal</span>
+                            </div>
+                            <div class="indicator-item">
+                                <span class="indicator-name">Emisiones CO₂</span>
+                                <span class="indicator-value">620 g/km</span>
+                            </div>
+                            <div class="indicator-item">
+                                <span class="indicator-name">Emisiones NOx</span>
+                                <span class="indicator-value">2.1 g/km</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Análisis Financiero Carga -->
+    <div id="modal-financiero-carga" class="modal-overlay">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3>Análisis Financiero - Programa Fom Carga</h3>
+                <button class="btn-close" onclick="closeModal('modal-financiero-carga')">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="fomcarga-info">
+                    <p>El programa Fom Carga ofrece incentivos económicos para la modernización de vehículos de carga.</p>
+                </div>
+                <div class="financial-form">
+                    <div class="form-grid">
+                        <div class="form-section">
+                            <h4>Costos del Vehículo</h4>
+                            <input type="number" placeholder="Precio Vehículo Nuevo (COP)" class="form-input">
+                            <input type="number" placeholder="Incentivo Fom Carga (COP)" class="form-input">
+                        </div>
+                        <div class="form-section">
+                            <h4>Operación</h4>
+                            <input type="number" placeholder="Km anuales" class="form-input">
+                            <input type="number" placeholder="Ahorro Combustible (%)" class="form-input">
+                        </div>
+                    </div>
+                    <button class="btn-primary" onclick="calcularTCOCarga()">Calcular Beneficios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
