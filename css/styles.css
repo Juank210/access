@@ -3,9 +3,9 @@
    =========================== */
 :root {
     /* Colores principales */
-    --primary-green: #4caf50;
-    --primary-green-dark: #388e3c;
-    --primary-green-light: #81c784;
+    --primary-green: #203977;
+    --primary-green-dark: #162a58;
+    --primary-green-light: #3a56a0;
     --primary-blue: #2196f3;
     --primary-blue-dark: #1976d2;
     --secondary-dark: #1a3c5e;
@@ -65,7 +65,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Aptos', Roboto, 'Helvetica Neue', Arial, sans-serif;
     background-color: var(--bg-main);
     color: var(--text-primary);
     line-height: 1.6;
@@ -112,6 +112,7 @@ body {
 }
 
 .logo-text {
+    font-family: 'Aptos', sans-serif;
     font-size: 1.75rem;
     font-weight: 700;
     color: var(--secondary-dark);
@@ -197,6 +198,7 @@ body {
 }
 
 .hero-title {
+    font-family: 'Aptos', sans-serif;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: var(--spacing-sm);
@@ -341,6 +343,7 @@ body {
 }
 
 .feature-title {
+    font-family: 'Aptos', sans-serif;
     font-size: 1.4rem;
     color: var(--secondary-dark);
     margin-bottom: var(--spacing-sm);
@@ -590,6 +593,7 @@ body {
 .btn-primary,
 .btn-secondary,
 .btn-analysis {
+    font-family: 'Aptos', sans-serif;
     padding: var(--spacing-sm) var(--spacing-lg);
     border: none;
     border-radius: var(--border-radius-md);
@@ -779,6 +783,7 @@ body {
 }
 
 .indicator-value {
+    font-family: 'Aptos', sans-serif;   
     font-size: 2rem;
     font-weight: 700;
     color: var(--primary-green);
@@ -949,8 +954,27 @@ body {
         transform: translateY(0);
     }
 }
+.indicator-item .indicator-value {
+    font-family: Arial, sans-serif; /* Datos numéricos en Arial para precisión visual */
+    font-size: 0.95rem;
+}
 
+.recommendations-box {
+    border-left: 4px solid var(--primary-green);
+    background: #f0f4fa;
+}
+
+/* ===========================
+   Utilidades
+   =========================== */
+.text-center { text-align: center; }
+.hidden { display: none !important; }
+
+@media (max-width: 768px) {
+    .hero-title { font-size: 2rem; }
+}
 .modal-header {
+    font-family: 'Aptos', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1110,7 +1134,16 @@ body {
     padding: var(--spacing-xs) 0;
     font-size: 0.9rem;
 }
-
+.card-mini-subtitle, 
+.card-large .card-mini-subtitle,
+.vehicle-spec,
+.indicator-label,
+.indicator-name,
+.detail-text,
+.badge-ev,
+.badge-ice {
+    font-family: Arial, Helvetica, sans-serif;
+}
 .badge-ev,
 .badge-ice {
     padding: 4px 12px;
